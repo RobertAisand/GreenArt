@@ -155,26 +155,23 @@ export class OrderService {
     async setPaymentDetails(orderId: string, paymentLink: string, shippingPrice: number) {
         const order = await this.prisma.order.findUnique({
             where: { id: orderId },
-            include: { items: true } // Подгружаем товары для пересчета
+            include: { items: true } 
         });
 
         if (!order) throw new NotFoundException('Заказ не найден');
 
-    // 1. Проверяем: если не курьер, доставка всегда 0
-        const finalShippingPrice = order.deliveryType === EnumDeliveryType.COURIER 
-            ? shippingPrice 
-            : 0;
+    // Считаем ТОЛЬКО стоимость товаров
+        const subTotal = order.items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+    
+    // Итоговая сумма = товары + доставка (которая 0, если самовывоз)
+        const finalShipping = order.deliveryType === 'PICKUP' ? 0 : shippingPrice;
 
-    // 2. Считаем чистую стоимость товаров (без старой доставки)
-        const itemsTotal = order.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-
-    // 3. Сохраняем итоговую сумму
         return this.prisma.order.update({
             where: { id: orderId },
             data: {
                 paymentLink,
-                shippingPrice: finalShippingPrice,
-                total: itemsTotal + finalShippingPrice,
+                shippingPrice: finalShipping,
+                total: subTotal + finalShipping,
                 status: 'AWAITING_PAYMENT'
             }
         });
