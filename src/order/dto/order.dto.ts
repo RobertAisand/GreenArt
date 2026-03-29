@@ -12,6 +12,7 @@ import {
 } from 'class-validator'
 import { Type } from 'class-transformer'
 import { EnumOrderStatus } from '@prisma/client'
+import { EnumDeliveryType } from '@prisma/client'
 
 export class OrderDto {
   @IsOptional()
@@ -29,9 +30,9 @@ export class OrderDto {
   @IsNotEmpty()
   phone: string
 
-  @IsString()
+  @IsEnum(EnumDeliveryType, { message: 'Выберите корректный способ доставки (PICKUP или COURIER)' })
   @IsNotEmpty()
-  deliveryType: string
+  deliveryType: EnumDeliveryType
 
   @IsString()
   @IsNotEmpty()

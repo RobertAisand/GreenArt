@@ -65,12 +65,14 @@ model Order {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  status EnumOrderStatus @default(PENDING)
-  total  Int
+  status        EnumOrderStatus @default(PENDING)
+  paymentLink   String?
+  total         Int
+  shippingPrice Int             @default(0)
 
   customerName    String
   phone           String
-  deliveryType    String
+  deliveryType    EnumDeliveryType
   deliveryAddress String
   deliveryDate    DateTime
   comment         String?
@@ -81,6 +83,11 @@ model Order {
   userId String @map("user_id")
 
   @@map("order")
+}
+
+enum EnumDeliveryType {
+  PICKUP // Самовывоз
+  COURIER // Доставка курьером
 }
 
 model OrderItem {
@@ -103,6 +110,7 @@ model OrderItem {
 enum EnumOrderStatus {
   PENDING // Ожидание подтверждения
   CONFIRMED // Подтвержден
+  AWAITING_PAYMENT
   IN_PROGRESS // В процессе (собираем букет / едем)
   IN_DELIVERY
   COMPLETED // Доставлен / Забран

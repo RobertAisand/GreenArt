@@ -67,6 +67,16 @@ export class OrderController {
         return this.orderService.updateOrder(id, user, dto);
     }
 
+    @UseGuards(AuthGuard('jwt'), RolesGuard)
+    @Roles('ADMIN', 'WORKER')
+    @Patch(':id/set-payment-details')
+    async setDetails(
+        @Param('id') id: string, 
+        @Body() dto: { paymentLink: string, shippingPrice: number }
+    ) {
+        return this.orderService.setPaymentDetails(id, dto.paymentLink, dto.shippingPrice);
+    }
+
     @UseGuards(AuthGuard('jwt'))
     @HttpCode(200)
     @Auth()
@@ -76,12 +86,12 @@ export class OrderController {
     }
 
     @UseGuards(AuthGuard('jwt'), RolesGuard) // <-- ИСПРАВЛЕНИЕ
-    @Roles('ADMIN') // Только для админов/операторов
+    @Roles('ADMIN', 'WORKER') // Только для админов/операторов
     @Patch(':id/status')
     async updateStatus(
         @Param('id') id: string, 
         @Body() dto: UpdateStatusDto // Валидатор сам проверит, что статус правильный
     ) {
-        return this.orderService.updateStatus(id, dto.status);
+        return this.orderService.updateStatus(id, dto.status, dto.paymentLink);
     }
 }

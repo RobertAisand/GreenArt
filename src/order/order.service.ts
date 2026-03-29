@@ -5,6 +5,7 @@ import { OrderDto } from './dto/order.dto'
 import { UpdateOrderDto } from './dto/update-order.dto'
 import { Prisma } from '@prisma/client'
 import { EnumOrderStatus } from '@prisma/client'
+import { EnumDeliveryType } from '@prisma/client'
 
 
 @Injectable()
@@ -116,18 +117,19 @@ export class OrderService {
     async delete(id: string, user: { id: string, role: string }) {
         const order = await this.getById(id, user)
         if (user.role !== 'ADMIN') {
-            if (order.status !== 'PENDING') {
-                throw new ForbiddenException('Удалить можно только заказ в статусе ожидания');
+            if (order.status !== 'PENDING','AWAITING_PAYMENT') {
+                throw new ForbiddenException('Удалить можно только заказ, который еще не начали собирать');
             }
         }
-        return this.prisma.order.delete({ where: { id: order.id } })
+        return this.prisma.order.delete({ where: { id: order.id } })    
     }
 
-    async updateStatus(orderId: string, status: string) {
+    async updateStatus(orderId: string, status: string, paymentLink?: string) {
     return this.prisma.order.update({
         where: { id: orderId },
         data: {
-            status: status as EnumOrderStatus 
+            status: status as EnumOrderStatus,
+            paymentLink: paymentLink || undefined
             }
         })
     }
@@ -147,6 +149,34 @@ export class OrderService {
                 price: product.price, // Берем актуальную цену
                 productId: item.productId
             };
+        });
+    }
+
+    async setPaymentDetails(orderId: string, paymentLink: string, shippingPrice: number) {
+        const order = await this.prisma.order.findUnique({
+            where: { id: orderId },
+            include: { items: true } // Подгружаем товары для пересчета
+        });
+
+        if (!order) throw new NotFoundException('Заказ не найден');
+
+    // 1. Проверяем: если не курьер, доставка всегда 0
+        const finalShippingPrice = order.deliveryType === EnumDeliveryType.COURIER 
+            ? shippingPrice 
+            : 0;
+
+    // 2. Считаем чистую стоимость товаров (без старой доставки)
+        const itemsTotal = order.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+    // 3. Сохраняем итоговую сумму
+        return this.prisma.order.update({
+            where: { id: orderId },
+            data: {
+                paymentLink,
+                shippingPrice: finalShippingPrice,
+                total: itemsTotal + finalShippingPrice,
+                status: 'AWAITING_PAYMENT'
+            }
         });
     }
 }
