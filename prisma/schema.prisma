@@ -7,112 +7,98 @@ datasource db {
 }
 
 model User {
-  id        String       @id @default(cuid())
-  role      EnumUserRole @default(USER)
-  createdAt DateTime     @default(now()) @map("created_at")
-  updatedAt DateTime     @updatedAt @map("updated_at")
-
-  email    String  @unique
-  password String?
-
-  name    String @default("Не указано")
-  picture String @default("/uploads/no-user-images.png")
-
-  orders Order[]
+  id         String       @id @default(cuid())
+  createdAt  DateTime     @default(now()) @map("created_at")
+  updatedAt  DateTime     @updatedAt @map("updated_at")
+  email      String       @unique
+  password   String?
+  name       String       @default("Не указано")
+  picture    String       @default("/uploads/no-user-images.png")
+  role       EnumUserRole @default(USER)
+  telegramId String?
+  orders     Order[]
 
   @@map("user")
 }
 
-enum EnumUserRole {
-  USER
-  WORKER
-  ADMIN
-}
-
 model Product {
-  id        String   @id @default(cuid())
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
-
+  id          String      @id @default(cuid())
+  createdAt   DateTime    @default(now()) @map("created_at")
+  updatedAt   DateTime    @updatedAt @map("updated_at")
   title       String
   description String
   price       Int
   images      String[]
-
-  category   Category? @relation(fields: [categoryId], references: [id])
-  categoryId String?   @map("category_id")
-
-  orderItems OrderItem[]
+  categoryId  String?     @map("category_id")
+  orderItems  OrderItem[]
+  category    Category?   @relation(fields: [categoryId], references: [id])
 
   @@map("product")
 }
 
 model Category {
-  id        String   @id @default(cuid())
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
-
+  id          String    @id @default(cuid())
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
   title       String
   description String
-
-  products Product[]
+  products    Product[]
 
   @@map("category")
 }
 
 model Order {
-  id        String   @id @default(cuid())
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
-
-  status        EnumOrderStatus @default(PENDING)
-  paymentLink   String?
-  total         Int
-  shippingPrice Int             @default(0)
-
+  id              String           @id @default(cuid())
+  createdAt       DateTime         @default(now()) @map("created_at")
+  updatedAt       DateTime         @updatedAt @map("updated_at")
+  status          EnumOrderStatus  @default(PENDING)
+  total           Int
   customerName    String
   phone           String
-  deliveryType    EnumDeliveryType
+  comment         String?
+  userId          String           @map("user_id")
   deliveryAddress String
   deliveryDate    DateTime
-  comment         String?
-
-  items OrderItem[]
-
-  user   User   @relation(fields: [userId], references: [id])
-  userId String @map("user_id")
+  deliveryType    EnumDeliveryType
+  paymentLink     String?
+  shippingPrice   Int              @default(0)
+  user            User             @relation(fields: [userId], references: [id])
+  items           OrderItem[]
 
   @@map("order")
-}
-
-enum EnumDeliveryType {
-  PICKUP // Самовывоз
-  COURIER // Доставка курьером
 }
 
 model OrderItem {
   id        String   @id @default(cuid())
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
-
-  quantity Int
-  price    Int
-
-  order   Order?  @relation(fields: [orderId], references: [id])
-  orderId String? @map("order_id")
-
-  product   Product @relation(fields: [productId], references: [id])
-  productId String  @map("product_id")
+  quantity  Int
+  price     Int
+  orderId   String?  @map("order_id")
+  productId String   @map("product_id")
+  order     Order?   @relation(fields: [orderId], references: [id])
+  product   Product  @relation(fields: [productId], references: [id])
 
   @@map("order_item")
 }
 
+enum EnumUserRole {
+  USER
+  ADMIN
+  WORKER
+}
+
+enum EnumDeliveryType {
+  PICKUP
+  COURIER
+}
+
 enum EnumOrderStatus {
-  PENDING // Ожидание подтверждения
-  CONFIRMED // Подтвержден
-  AWAITING_PAYMENT
-  IN_PROGRESS // В процессе (собираем букет / едем)
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
   IN_DELIVERY
-  COMPLETED // Доставлен / Забран
-  CANCELLED // Отменен
+  IN_PROGRESS
+  AWAITING_PAYMENT
 }

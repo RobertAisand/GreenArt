@@ -15,15 +15,18 @@ import {
 } from '@nestjs/common'
 import { OrderService } from './order.service'
 import { Auth } from 'src/auth/decorators/auth.decorator'
-import { CurrentUser } from 'src/auth/decorators/user.decorator' // Импортируй это
+import { CurrentUser } from 'src/auth/decorators/user.decorator'
 import { OrderDto } from './dto/order.dto' // Твой DTO
 import { Roles } from '../auth/decorators/roles.decorator'
 import { RolesGuard } from '../auth/guards/roles.guard'
 import { AuthGuard } from '@nestjs/passport'
 import { UpdateOrderDto } from './dto/update-order.dto'
 import { UpdateStatusDto } from './dto/update-status.dto'
+import { EnumOrderStatus } from '@prisma/client'
+import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger'
 
 
+@ApiTags('Orders')
 @Controller('orders')
 export class OrderController {
     constructor(private readonly orderService: OrderService) {}
@@ -52,7 +55,6 @@ export class OrderController {
     @HttpCode(200)
     @Post()
     async create(@Body() dto: OrderDto, @CurrentUser('id') userId: string) {
-        // userId обычно берется из токена, чтобы никто не создал заказ от чужого имени
         return this.orderService.create(dto, userId);
     }
 
@@ -60,21 +62,21 @@ export class OrderController {
     @Put(':id')
     async update(
         @Param('id') id: string, 
-        @Body() dto: UpdateOrderDto, // Убедись, что используешь UpdateOrderDto, а не OrderDto
+        @Body() dto: UpdateOrderDto,
         @CurrentUser() user: { id: string; role: string }
     ) {
-        // Вызывай именно updateOrder, если в сервисе метод называется так
         return this.orderService.updateOrder(id, user, dto);
     }
+
 
     @UseGuards(AuthGuard('jwt'), RolesGuard)
     @Roles('ADMIN', 'WORKER')
     @Patch(':id/set-payment-details')
     async setDetails(
-        @Param('id') id: string, 
-        @Body() dto: { paymentLink: string, shippingPrice: number }
+        @Param('id') id: string,
+        @Body('shippingPrice') shippingPrice: number 
     ) {
-        return this.orderService.setPaymentDetails(id, dto.paymentLink, dto.shippingPrice);
+        return this.orderService.setPaymentDetails(id, shippingPrice);
     }
 
     @UseGuards(AuthGuard('jwt'))
@@ -85,13 +87,19 @@ export class OrderController {
         return this.orderService.delete(id, user);
     }
 
-    @UseGuards(AuthGuard('jwt'), RolesGuard) // <-- ИСПРАВЛЕНИЕ
-    @Roles('ADMIN', 'WORKER') // Только для админов/операторов
+    @UseGuards(AuthGuard('jwt'), RolesGuard)
+    @Roles('ADMIN', 'WORKER')
     @Patch(':id/status')
     async updateStatus(
         @Param('id') id: string, 
-        @Body() dto: UpdateStatusDto // Валидатор сам проверит, что статус правильный
+        @Body('status') status: EnumOrderStatus
     ) {
-        return this.orderService.updateStatus(id, dto.status, dto.paymentLink);
+        return this.orderService.updateStatus(id, status);
+    }
+
+
+    @Post('webhook/yookassa')
+    async yookassaWebhook(@Body() body: any) {
+        return this.orderService.handleWebhook(body);
     }
 }

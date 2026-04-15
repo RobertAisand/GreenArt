@@ -8,7 +8,6 @@ import * as crypto from 'crypto'
 
 @Injectable()
 export class FileService {
-    // Список разрешенных расширений
     private ALLOWED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp']
 
     async saveFile(files: Express.Multer.File[], folder: string = 'products'): Promise<FileResponse[]> {

@@ -8,7 +8,7 @@ import {
     BadRequestException
 } from '@nestjs/common'
 import { FileService } from './file.service'
-import { FilesInterceptor } from '@nestjs/platform-express' // Важно: FilesInterceptor
+import { FilesInterceptor } from '@nestjs/platform-express'
 import { Auth } from 'src/auth/decorators/auth.decorator'
 
 @Controller('files')
