@@ -9,7 +9,10 @@ export function proxy(request: NextRequest) {
   const accessToken = request.cookies.get(ACCESS_TOKEN)?.value;
 
   const isAuthPage = nextUrl.pathname.startsWith("/auth");
-  const isLoggedIn = Boolean(accessToken);
+  // OAuth-возврат: бэкенд редиректит на /dashboard?accessToken=... — cookie
+  // ещё не выставлена, пропускаем запрос, токен сохранит сама страница.
+  const isOAuthReturn = nextUrl.searchParams.has("accessToken");
+  const isLoggedIn = Boolean(accessToken) || isOAuthReturn;
 
   // Залогиненного со страницы авторизации уводим в кабинет.
   if (isAuthPage) {

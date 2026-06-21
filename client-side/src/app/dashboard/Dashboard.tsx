@@ -1,17 +1,30 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 
 import { Button } from "@/components/ui/button";
 import { useProfile } from "@/hooks/useProfile";
 import { authService } from "@/services/auth.service";
+import { saveTokenStorage } from "@/services/auth-token.service";
 
 export function Dashboard() {
   const router = useRouter();
   const queryClient = useQueryClient();
   const { data: user, isLoading, isError } = useProfile();
+
+  // OAuth-возврат: бэкенд кладёт accessToken в query. Сохраняем его в cookie
+  // и перезагружаемся на чистый /dashboard — там уже сработает обычный поток.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("accessToken");
+    if (token) {
+      saveTokenStorage(token);
+      window.location.replace("/dashboard");
+    }
+  }, []);
 
   async function handleLogout() {
     try {

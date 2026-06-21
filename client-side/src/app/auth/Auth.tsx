@@ -6,8 +6,11 @@ import { useMutation } from "@tanstack/react-query";
 import type { AxiosError } from "axios";
 import { Leaf } from "lucide-react";
 import toast from "react-hot-toast";
+import { FcGoogle } from "react-icons/fc";
+import { FaYandex } from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
+import { getOAuthUrl } from "@/constants/api.constants";
 import { authService } from "@/services/auth.service";
 import type { IAuthForm } from "@/shared/types/auth.interface";
 
@@ -149,6 +152,29 @@ export function Auth() {
                 : "Войти"}
           </Button>
         </form>
+
+        <div className="my-6 flex items-center gap-3">
+          <span className="h-px flex-1 bg-border" />
+          <span className="text-muted-foreground text-xs uppercase">
+            или
+          </span>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+
+        <div className="grid gap-3">
+          <Button asChild variant="outline" size="lg" className="h-11 w-full">
+            <a href={getOAuthUrl("google")}>
+              <FcGoogle className="size-5" />
+              Продолжить с Google
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="h-11 w-full">
+            <a href={getOAuthUrl("yandex")}>
+              <FaYandex className="size-5 text-[#FC3F1D]" />
+              Продолжить с Yandex
+            </a>
+          </Button>
+        </div>
 
         <p className="text-muted-foreground mt-6 text-center text-sm">
           {isRegister ? "Уже есть аккаунт? " : "Нет аккаунта? "}
