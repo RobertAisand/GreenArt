@@ -1,0 +1,5884 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+client-side/
+  .git/
+    gk/
+      config
+    hooks/
+      applypatch-msg.sample
+      commit-msg.sample
+      fsmonitor-watchman.sample
+      post-update.sample
+      pre-applypatch.sample
+      pre-commit.sample
+      pre-merge-commit.sample
+      pre-push.sample
+      pre-rebase.sample
+      pre-receive.sample
+      prepare-commit-msg.sample
+      push-to-checkout.sample
+      update.sample
+    info/
+      exclude
+    logs/
+      refs/
+        heads/
+          main
+      HEAD
+    objects/
+      00/
+        4145cddf3f9db91b57b9cb596683c8eb420862
+      02/
+        89fd0bdb03ab9d4b0765319f5fc2cf072f35b8
+      05/
+        e726d1b4201bc8c7716d2b058279676582e8c0
+      06/
+        459ceb578bde6b8c5fc75f4fe734b14a93197f
+      0a/
+        fa50666fff2dbda43cb9f494652570dedd0c1b
+      15/
+        a70a758a8fac8188edf13d3beb521738dba059
+      1b/
+        dc1d66ab5752bb8929bbb4ca0daee1df5f30da
+      20/
+        bbcabb4c7b30aca8d59844ed70664f2dbe459d
+      24/
+        d6814c2fbf017cf0363b9ca5f5e2ae83136c8a
+      30/
+        67436099a951ca564ea053723bc636017d8214
+      3a/
+        13f90a773b0facb675bf5b1a8239c8f33d36f5
+      3f/
+        36f7c5c4cfb7fb3c745bfd7d38b2d21a8c441d
+      43/
+        c994c2d3617f947bcb5adf1933e21dabe46bb5
+      51/
+        74b28c565c285e3e312ec5178be64fbeca8398
+      52/
+        0a6378500902b888f6d381a0d32211d45b5047
+      56/
+        7f17b0d7c7fb662c16d4357dd74830caf2dccb
+      5a/
+        7a18feaa13f49f9ee8726c31f3e0b133774c8e
+      5e/
+        f6a520780202a1d6addd833d800ccb1ecac0bb
+      60/
+        0e0c6b787804298fa12e2b13876750c269a4ba
+      61/
+        e36849cf7cfa9f1f71b4a3964a4953e3e243d3
+      71/
+        8d6fea4835ec2d246af9800eddb7ffb276240c
+      77/
+        053960334e2e34dc584dea8019925c3b4ccca9
+      80/
+        205a8d732fd41a5594b231418a731df342732d
+      84/
+        3571f984f94f32a0c6f621c9f0351b9d3e7f5c
+      8b/
+        d0e39085d5260e7f8faffcad2fdc45e10aef33
+      97/
+        6eb90df142ef2c4f3f39cee8b0e4c4f4771b62
+      9d/
+        39e268b525720289c2bcb8c3afb294f263ccc1
+      a2/
+        dc41ecee5ec435200fe7cba2bde4107f823774
+      ae/
+        617df79844469f861fe3fb8c63c2ee210e798d
+      b2/
+        b2a44f6ebc70c450043c05a002e7a93ba5d651
+      bd/
+        0c391ddd1088e9067844c48835bf4abcd61783
+      c2/
+        312b61f3025b705d32d2f0582b69d32684afe1
+      c7/
+        d9020776e62a595c18a461b5d9474378892fe3
+      c8/
+        8f389de09f418da376598c42e8788d4fb6d172
+      d0/
+        651880d98815bba82a5f2ad4f05f10a3cd2c9e
+      d9/
+        0d59d12932dbc1e6eb198593cebc73a9bc7def
+        11e6fa3334e8d013a46c2a900b8d81a2dcc278
+      e2/
+        15bc4ccf138bbc38ad58ad57e92135484b3c0f
+      e3/
+        1899676b10f11905b3c9d0b1332294c1606786
+      e9/
+        ffa3083ad279ecf95fd8eae59cb253e9a539c4
+      f9/
+        d1222dc82ba15ea6be3064285e1ed3fb53ef97
+    refs/
+      heads/
+        main
+    COMMIT_EDITMSG
+    config
+    description
+    HEAD
+    index
+  public/
+    file.svg
+    globe.svg
+    next.svg
+    vercel.svg
+    window.svg
+  src/
+    app/
+      (root)/
+        Home.tsx
+        layout.tsx
+        page.tsx
+      auth/
+        Auth.tsx
+        page.tsx
+      globals.css
+      layout.tsx
+      providers.tsx
+    components/
+      ui/
+        button.tsx
+    constants/
+      seo.constants.ts
+    lib/
+      utils.ts
+    shared/
+      types/
+        auth.interface.ts
+        cart.interface.ts
+        category.interface.ts
+        order.interface.ts
+        product.interface.ts
+        user.interface.ts
+    utils/
+      clsx.ts
+  .gitignore
+  .prettierrc
+  CLAUDE.md
+  components.json
+  eslint.config.mjs
+  next.config.ts
+  package.json
+  postcss.config.mjs
+  README.md
+  tsconfig.json
+server-side/
+  .git/
+    gk/
+      config
+    hooks/
+      applypatch-msg.sample
+      commit-msg.sample
+      fsmonitor-watchman.sample
+      post-update.sample
+      pre-applypatch.sample
+      pre-commit.sample
+      pre-merge-commit.sample
+      pre-push.sample
+      pre-rebase.sample
+      pre-receive.sample
+      prepare-commit-msg.sample
+      push-to-checkout.sample
+      update.sample
+    info/
+      exclude
+    objects/
+      01/
+        9336cdfecfe7509c1a2e6c877043afb2265765
+      02/
+        94874ff69a0896aa9b2542b8a9209b8fc91b25
+      03/
+        6b5e8e4496f9ec78724dc53b17b13071aa5892
+      0c/
+        3246b0381bdbd59569df65fe0015141f49eea8
+      0d/
+        221dd314292306f14018dd5e738322e878f17d
+        a51194e25f26b7ccc22044c16a1a7ff09e86cb
+      0e/
+        247dc6c41078226b511398a22cb472d48d7b7c
+        560d1c1bba0c7c12b8e7f04b8a8b9f946b91df
+      12/
+        ea110554ce1991a7159f69bcedef39d9250c5f
+      13/
+        a154add041692de1573f7363f8da86952b4f91
+      15/
+        8f7aa99db32790b6bfc2ea5e2cb155bae02042
+      16/
+        4ad088ba7fd9a45b9ec65bf6ea128a9215136a
+      17/
+        777552ca567bccc0b762644a99ece83c3c5daf
+      1a/
+        7b7a2d305b5c9a9817265a0c02b02bf4a2621f
+      1b/
+        23242ae62fac7259545ad94ed35e9660d96cb3
+      23/
+        74c1ff1dac391a9f64c2352bd2c515afc5811b
+      25/
+        88436c70eabd28157b5c928c96b6e325af45a8
+        a4b8e93a8846eed24043ed3dfd91ef62511a2d
+      2c/
+        5dfe8edba471cb04b645a1db73b063f4e6578a
+        64de28b7c3c58f2adf5a705c490e2df499f1c2
+        c1d3894ce4db7ccd9a328e2cc28ee8878a31c5
+      2d/
+        26bb1d302949cf98e5d1f85c2c0c6dec5e28bb
+        c5ae24fa99d4143d1bef83b51b7d19b3ffc08d
+      31/
+        5c157774b3233842db1eaabfad021a12af62b4
+      32/
+        1dd6359710519db6eb464fa871cb6bf286f2cd
+        58f294134e0e0e9191a1873b362b8d054c25e1
+      35/
+        1b242e41fff95fd853f8546b5e4f7047776f27
+      36/
+        260ca8c83d446a66f392a431ed74d521c9dae5
+      37/
+        92fdb2701f64b27a5e4a7bc87eaf0bd9d51b14
+      38/
+        ec11626edf0d280f0a2d85e8e33e53ed11d2ab
+      3c/
+        6b255e45b7f7da683a1f6416f8b5b779e6211e
+      3e/
+        5693a4ecc5c7d189626b7789ca18a2358c642d
+      3f/
+        7260de22100b316d1abe953faa671f46ff7ce7
+      41/
+        ad1e3af70ef6beb1b51d34c82a9c0085427793
+      42/
+        dfc62989883a32469e258947e4fec49c1dcfc2
+      44/
+        e79f38f7f9302e496d3d83203d2d5423004338
+      4b/
+        8826e08d6ca78fa6cb0446e64f5a512b60c0f0
+      4d/
+        310ffcfae3d31a25ba97407aa8a4e9973acb56
+        6d92c2866c526c855f255f6ca066eaedf21213
+        d9596ac4a9f50326b8bc50ae2f4a4e5f13f58b
+      4e/
+        9f8271c9879f43729f921e83506d3c57590c94
+        fa3e10a9254215251844d42347b2f331b1dd85
+      52/
+        2c834deb7bc0477175769586f1d438b0024211
+      57/
+        02c2cd0f2bf787644f74eff0162107544af613
+      58/
+        50237e1177231720372da1e3f192c6c9680551
+        90ba9914b726636b4b70cb5e01ac916f0cf1d4
+      62/
+        190ceb50b7511addbafef42bb0c8db2e277d6f
+        68ef87dd878966dce759b32f075578e53d03b4
+      64/
+        f86c6bd2bb30e3d22e752295eb7c7923fc191e
+      65/
+        8ecf7d77673dda493edfad168f70d24b59e71e
+      68/
+        393e860cbbdb918fde7cf90ea3cdf406c3719a
+        db1bb4386ac18915691cfc6f4af63ffe35476d
+      69/
+        d6b525c1d2dd650167103615cfa25c9d95da3a
+      6e/
+        7d71e27883f42392bf9ec40fa42e22512c80fe
+      6f/
+        253e1f5183cdd6da61a868b5e893fa1db214c7
+        e203de3af869230ae647966f7e4049651d17e0
+      70/
+        da301ea00108411da507bfb9639324b8e66322
+      71/
+        27aa8629ca756098a3265d8f08f00d427133b7
+      78/
+        3a454b13fd45bcc1f7488721100c07dc279f71
+      7c/
+        19caba8ce49f7195859fc69f0c55b32f732408
+      7d/
+        d582b2a04176b0cbf13d4031e8dbf607d1909d
+      81/
+        2f709ed0fdd8447ca75a5823483e66b1e2fc4c
+      83/
+        733238986c0e3eb0d924151803f86b2578e5db
+      88/
+        7e39c7bfe8ae1d08cfbe485315599a353be2a4
+      8a/
+        4dbe8c5bfa827af63400c01a19f1354331d9ff
+        b7b891e05c63075c57f005ffb79731528b6478
+      8d/
+        116ee6a1ad0732e62dc9933a9a49e5ee6e4acb
+      8e/
+        6ef12eda06181c1c75236cc2f3c8ea7f2b2d9d
+        d62112e6edfbc12ffa9d33a1f9d4481cc7d559
+      90/
+        2f5af60794188b0d9f296092086ea58364cfa0
+        4fe30478d8b24f57fe0c716f79b2c8a44934b9
+        90cc07d6aba8904f5cfea85dd0c14213647db3
+      91/
+        77c7bbb01bb67b8e8ef5214d807aaad0b492e3
+      94/
+        06008239248b5700d89ef3739322e2dd44e7e3
+      9f/
+        d933060228e116f9bddba69071ed01194bd62f
+      a0/
+        5856ac3f5b3f71e07af3a07384caca298d5dc7
+        5e0898dae6d5133d613984e96538e3c8f3d7cd
+      a1/
+        8991d4ed4cbf1d631b251882b19ff1c0f368e4
+      a3/
+        e6efaf3a09a668ca6bc1d349570783c2345760
+      ac/
+        7767e582fecead454bfc1a1a42895c178cf97b
+      ae/
+        243f95a78665bd2971a580c9cac33b6b921d7d
+        5715fc0ea57f8cbb23f55a4f1055e790eea903
+        dd2914e0347ed67892e7d28b215f6574c57241
+      b2/
+        2c367d4ab31e75f4c86cad4fac81effbf3c5b3
+      be/
+        ec14d681e015597bd577a283fcc2f048832bef
+      c0/
+        099acaf8b5817ab6140a312f615b173efcd652
+        40c4280951a2f1c0e072b5b68244ba92067e01
+      c1/
+        b83b009d3fdcad2d6d3a07c7c9c832c202b906
+      c4/
+        888d548bd93866e313664cd33a529b05b09f55
+      c9/
+        ba8ebb633a03d36ad0b64b3f9e15b0c74ab874
+        ee584197f0ac020aababf09ea9067450f5198f
+      cd/
+        39adf86bd7334be4302f8b6467aff87b4a814a
+      d1/
+        f10875acc4d939b6b4d1608842ea4e1f8870eb
+      d3/
+        0c94649bb04a3af7a21ea849edd31ea80b9c79
+      d5/
+        b6bfb4a92e1187094c183b0b818446814cbf8b
+      d7/
+        04e13f85f6d53fa7aa6bee3c8dc3eeabb4c446
+      da/
+        b4dbfae1b63d6a2ab6fb227324446047649add
+      dd/
+        9b07186cc6d2add3d9f015997d93e1a5a7a255
+      df/
+        f99cf397aa7628edffe830d9b8e10c047d7852
+      e1/
+        1c8a8a07d0dd8548586ba8be1b7bed5fe1f0cc
+        d7843b95312c9e2763d008596215862dcf6afe
+      e4/
+        a10b212165a409c6b714b47bd306eccd2c18f5
+      e6/
+        998ee29a12b1d1f2f0ea8f33a8ace045f990a4
+      e9/
+        6806fc6f116ad2108a3928f5f0a4aab6323872
+      ea/
+        a30f9e5271b1f6654fc347d2c9c785595d9c79
+      ef/
+        581a12d98f6f78eac722b485066b39b055fce2
+        caac63211428148d47bb2ec89c22bab2a96012
+      f4/
+        472f400d74440254f9cfa2be4b882d73d078fc
+      f5/
+        1ceee86708f364159d676ee42b46cf6a78f808
+      f6/
+        2e15e69007dd4af0165c93712bb6c301ef9f56
+        e54b75ca49b6ea886461c03415be55f7daf0f1
+      f9/
+        1678a680ff2e3cfa25850ae4ad62bdd51ce77d
+        aa683b1ad5cffc76da9ad4b77c562ac4c2b399
+      fd/
+        0ecfd47ad6a3f8097cf09d12de79ae5b834caf
+    refs/
+      heads/
+        main
+      remotes/
+        origin/
+          main
+    COMMIT_EDITMSG
+    config
+    description
+    HEAD
+    index
+  prisma/
+    schema.prisma
+  src/
+    auth/
+      decorators/
+        auth.decorator.ts
+        roles.decorator.ts
+        user.decorator.ts
+      dto/
+        auth.dto.ts
+      guards/
+        jwt-auth.guard.ts
+        roles.guard.ts
+      strategies/
+        google.strategy.ts
+        jwt.strategy.ts
+        yandex.strategy.ts
+      auth.controller.ts
+      auth.module.ts
+      auth.service.ts
+    category/
+      dto/
+        category.dto.ts
+      category.controller.ts
+      category.module.ts
+      category.service.ts
+    config/
+      jwt.config.ts
+    file/
+      file.controller.ts
+      file.interface.ts
+      file.module.ts
+      file.service.ts
+    filters/
+      all-exceptions.filter.ts
+    order/
+      dto/
+        delivery-status.dto.ts
+        order.dto.ts
+        update-order.dto.ts
+        update-status.dto.ts
+      order.controller.ts
+      order.module.ts
+      order.service.ts
+    product/
+      dto/
+        product.dto.ts
+      product.controller.ts
+      product.module.ts
+      product.service.ts
+    telegram/
+      telegram.service.ts
+    user/
+      decorators/
+        user.decorator.ts
+      user.controller.ts
+      user.module.ts
+      user.service.ts
+    app.controller.spec.ts
+    app.controller.ts
+    app.module.ts
+    app.service.ts
+    main.ts
+    prisma.service.ts
+  uploads/
+    no-user-image.png
+  .gitignore
+  .prettierrc
+  eslint.config.mjs
+  nest-cli.json
+  package.json
+  pnpm-workspace.yaml
+  prisma.config.ts
+  README.md
+  tsconfig.build.json
+  tsconfig.json
+cspell.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="client-side/.git/gk/config">
+[branch "main"]
+	gk-last-accessed = 2026-04-18T06:36:34.110Z
+	gk-last-modified = 2026-04-18T06:36:34.544Z
+</file>
+
+<file path="client-side/.git/hooks/applypatch-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.  The hook is
+# allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "applypatch-msg".
+
+. git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+:
+</file>
+
+<file path="client-side/.git/hooks/commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+# Uncomment the below to add a Signed-off-by line to the message.
+# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+# hook is more suited to it.
+#
+# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+
+# This example catches duplicate Signed-off-by lines.
+
+test "" = "$(grep '^Signed-off-by: ' "$1" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	exit 1
+}
+</file>
+
+<file path="client-side/.git/hooks/fsmonitor-watchman.sample">
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IPC::Open2;
+
+# An example hook script to integrate Watchman
+# (https://facebook.github.io/watchman/) with git to speed up detecting
+# new and modified files.
+#
+# The hook is passed a version (currently 2) and last update token
+# formatted as a string and outputs to stdout a new update token and
+# all files that have been modified since the update token. Paths must
+# be relative to the root of the working tree and separated by a single NUL.
+#
+# To enable this hook, rename this file to "query-watchman" and set
+# 'git config core.fsmonitor .git/hooks/query-watchman'
+#
+my ($version, $last_update_token) = @ARGV;
+
+# Uncomment for debugging
+# print STDERR "$0 $version $last_update_token\n";
+
+# Check the hook interface version
+if ($version ne 2) {
+	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+	    "Falling back to scanning...\n";
+}
+
+my $git_work_tree = get_working_dir();
+
+my $retry = 1;
+
+my $json_pkg;
+eval {
+	require JSON::XS;
+	$json_pkg = "JSON::XS";
+	1;
+} or do {
+	require JSON::PP;
+	$json_pkg = "JSON::PP";
+};
+
+launch_watchman();
+
+sub launch_watchman {
+	my $o = watchman_query();
+	if (is_work_tree_watched($o)) {
+		output_result($o->{clock}, @{$o->{files}});
+	}
+}
+
+sub output_result {
+	my ($clockid, @files) = @_;
+
+	# Uncomment for debugging watchman output
+	# open (my $fh, ">", ".git/watchman-output.out");
+	# binmode $fh, ":utf8";
+	# print $fh "$clockid\n@files\n";
+	# close $fh;
+
+	binmode STDOUT, ":utf8";
+	print $clockid;
+	print "\0";
+	local $, = "\0";
+	print @files;
+}
+
+sub watchman_clock {
+	my $response = qx/watchman clock "$git_work_tree"/;
+	die "Failed to get clock id on '$git_work_tree'.\n" .
+		"Falling back to scanning...\n" if $? != 0;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub watchman_query {
+	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+	or die "open2() failed: $!\n" .
+	"Falling back to scanning...\n";
+
+	# In the query expression below we're asking for names of files that
+	# changed since $last_update_token but not from the .git folder.
+	#
+	# To accomplish this, we're using the "since" generator to use the
+	# recency index to select candidate nodes and "fields" to limit the
+	# output to file names only. Then we're using the "expression" term to
+	# further constrain the results.
+	my $last_update_line = "";
+	if (substr($last_update_token, 0, 1) eq "c") {
+		$last_update_token = "\"$last_update_token\"";
+		$last_update_line = qq[\n"since": $last_update_token,];
+	}
+	my $query = <<"	END";
+		["query", "$git_work_tree", {$last_update_line
+			"fields": ["name"],
+			"expression": ["not", ["dirname", ".git"]]
+		}]
+	END
+
+	# Uncomment for debugging the watchman query
+	# open (my $fh, ">", ".git/watchman-query.json");
+	# print $fh $query;
+	# close $fh;
+
+	print CHLD_IN $query;
+	close CHLD_IN;
+	my $response = do {local $/; <CHLD_OUT>};
+
+	# Uncomment for debugging the watch response
+	# open ($fh, ">", ".git/watchman-response.json");
+	# print $fh $response;
+	# close $fh;
+
+	die "Watchman: command returned no output.\n" .
+	"Falling back to scanning...\n" if $response eq "";
+	die "Watchman: command returned invalid output: $response\n" .
+	"Falling back to scanning...\n" unless $response =~ /^\{/;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub is_work_tree_watched {
+	my ($output) = @_;
+	my $error = $output->{error};
+	if ($retry > 0 and $error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+		$retry--;
+		my $response = qx/watchman watch "$git_work_tree"/;
+		die "Failed to make watchman watch '$git_work_tree'.\n" .
+		    "Falling back to scanning...\n" if $? != 0;
+		$output = $json_pkg->new->utf8->decode($response);
+		$error = $output->{error};
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		# Uncomment for debugging watchman output
+		# open (my $fh, ">", ".git/watchman-output.out");
+		# close $fh;
+
+		# Watchman will always return all files on the first query so
+		# return the fast "everything is dirty" flag to git and do the
+		# Watchman query just to get it over with now so we won't pay
+		# the cost in git to look up each individual file.
+		my $o = watchman_clock();
+		$error = $output->{error};
+
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		output_result($o->{clock}, ("/"));
+		$last_update_token = $o->{clock};
+
+		eval { launch_watchman() };
+		return 0;
+	}
+
+	die "Watchman: $error.\n" .
+	"Falling back to scanning...\n" if $error;
+
+	return 1;
+}
+
+sub get_working_dir {
+	my $working_dir;
+	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+		$working_dir = Win32::GetCwd();
+		$working_dir =~ tr/\\/\//;
+	} else {
+		require Cwd;
+		$working_dir = Cwd::cwd();
+	}
+
+	return $working_dir;
+}
+</file>
+
+<file path="client-side/.git/hooks/post-update.sample">
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+exec git update-server-info
+</file>
+
+<file path="client-side/.git/hooks/pre-applypatch.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed
+# by applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+. git-sh-setup
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+:
+</file>
+
+<file path="client-side/.git/hooks/pre-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# If you want to allow non-ASCII filenames set this variable to true.
+allownonascii=$(git config --type=bool hooks.allownonascii)
+
+# Redirect output to stderr.
+exec 1>&2
+
+# Cross platform projects tend to avoid non-ASCII filenames; prevent
+# them from being added to the repository. We exploit the fact that the
+# printable range starts at the space character and ends with tilde.
+if [ "$allownonascii" != "true" ] &&
+	# Note that the use of brackets around a tr range is ok here, (it's
+	# even required, for portability to Solaris 10's /usr/bin/tr), since
+	# the square bracket bytes happen to fall in the designated range.
+	test $(git diff --cached --name-only --diff-filter=A -z $against |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+then
+	cat <<\EOF
+Error: Attempt to add a non-ASCII file name.
+
+This can cause problems if you want to work with people on other platforms.
+
+To be portable it is advisable to rename the file.
+
+If you know what you are doing you can disable this check using:
+
+  git config hooks.allownonascii true
+EOF
+	exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
+</file>
+
+<file path="client-side/.git/hooks/pre-merge-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git merge" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message to
+# stderr if it wants to stop the merge commit.
+#
+# To enable this hook, rename this file to "pre-merge-commit".
+
+. git-sh-setup
+test -x "$GIT_DIR/hooks/pre-commit" &&
+        exec "$GIT_DIR/hooks/pre-commit"
+:
+</file>
+
+<file path="client-side/.git/hooks/pre-push.sample">
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local oid> <remote ref> <remote oid>
+#
+# This sample shows how to prevent push of commits where the log message starts
+# with "WIP" (work in progress).
+
+remote="$1"
+url="$2"
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+
+while read local_ref local_oid remote_ref remote_oid
+do
+	if test "$local_oid" = "$zero"
+	then
+		# Handle delete
+		:
+	else
+		if test "$remote_oid" = "$zero"
+		then
+			# New branch, examine all commits
+			range="$local_oid"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_oid..$local_oid"
+		fi
+
+		# Check for WIP commit
+		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+		if test -n "$commit"
+		then
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
+</file>
+
+<file path="client-side/.git/hooks/pre-rebase.sample">
+#!/bin/sh
+#
+# Copyright (c) 2006, 2008 Junio C Hamano
+#
+# The "pre-rebase" hook is run just before "git rebase" starts doing
+# its job, and can prevent the command from running by exiting with
+# non-zero status.
+#
+# The hook is called with the following parameters:
+#
+# $1 -- the upstream the series was forked from.
+# $2 -- the branch being rebased (or empty when rebasing the current branch).
+#
+# This sample shows how to prevent topic branches that are already
+# merged to 'next' branch from getting rebased, because allowing it
+# would result in rebasing already published history.
+
+publish=next
+basebranch="$1"
+if test "$#" = 2
+then
+	topic="refs/heads/$2"
+else
+	topic=`git symbolic-ref HEAD` ||
+	exit 0 ;# we do not interrupt rebasing detached HEAD
+fi
+
+case "$topic" in
+refs/heads/??/*)
+	;;
+*)
+	exit 0 ;# we do not interrupt others.
+	;;
+esac
+
+# Now we are dealing with a topic branch being rebased
+# on top of master.  Is it OK to rebase it?
+
+# Does the topic really exist?
+git show-ref -q "$topic" || {
+	echo >&2 "No such branch $topic"
+	exit 1
+}
+
+# Is topic fully merged to master?
+not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+if test -z "$not_in_master"
+then
+	echo >&2 "$topic is fully merged to master; better remove it."
+	exit 1 ;# we could allow it, but there is no point.
+fi
+
+# Is topic ever merged to next?  If so you should not be rebasing it.
+only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+only_next_2=`git rev-list ^master           ${publish} | sort`
+if test "$only_next_1" = "$only_next_2"
+then
+	not_in_topic=`git rev-list "^$topic" master`
+	if test -z "$not_in_topic"
+	then
+		echo >&2 "$topic is already up to date with master"
+		exit 1 ;# we could allow it, but there is no point.
+	else
+		exit 0
+	fi
+else
+	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+	/usr/bin/perl -e '
+		my $topic = $ARGV[0];
+		my $msg = "* $topic has commits already merged to public branch:\n";
+		my (%not_in_next) = map {
+			/^([0-9a-f]+) /;
+			($1 => 1);
+		} split(/\n/, $ARGV[1]);
+		for my $elem (map {
+				/^([0-9a-f]+) (.*)$/;
+				[$1 => $2];
+			} split(/\n/, $ARGV[2])) {
+			if (!exists $not_in_next{$elem->[0]}) {
+				if ($msg) {
+					print STDERR $msg;
+					undef $msg;
+				}
+				print STDERR " $elem->[1]\n";
+			}
+		}
+	' "$topic" "$not_in_next" "$not_in_master"
+	exit 1
+fi
+
+<<\DOC_END
+
+This sample hook safeguards topic branches that have been
+published from being rewound.
+
+The workflow assumed here is:
+
+ * Once a topic branch forks from "master", "master" is never
+   merged into it again (either directly or indirectly).
+
+ * Once a topic branch is fully cooked and merged into "master",
+   it is deleted.  If you need to build on top of it to correct
+   earlier mistakes, a new topic branch is created by forking at
+   the tip of the "master".  This is not strictly necessary, but
+   it makes it easier to keep your history simple.
+
+ * Whenever you need to test or publish your changes to topic
+   branches, merge them into "next" branch.
+
+The script, being an example, hardcodes the publish branch name
+to be "next", but it is trivial to make it configurable via
+$GIT_DIR/config mechanism.
+
+With this workflow, you would want to know:
+
+(1) ... if a topic branch has ever been merged to "next".  Young
+    topic branches can have stupid mistakes you would rather
+    clean up before publishing, and things that have not been
+    merged into other branches can be easily rebased without
+    affecting other people.  But once it is published, you would
+    not want to rewind it.
+
+(2) ... if a topic branch has been fully merged to "master".
+    Then you can delete it.  More importantly, you should not
+    build on top of it -- other people may already want to
+    change things related to the topic as patches against your
+    "master", so if you need further changes, it is better to
+    fork the topic (perhaps with the same name) afresh from the
+    tip of "master".
+
+Let's look at this example:
+
+		   o---o---o---o---o---o---o---o---o---o "next"
+		  /       /           /           /
+		 /   a---a---b A     /           /
+		/   /               /           /
+	       /   /   c---c---c---c B         /
+	      /   /   /             \         /
+	     /   /   /   b---b C     \       /
+	    /   /   /   /             \     /
+    ---o---o---o---o---o---o---o---o---o---o---o "master"
+
+
+A, B and C are topic branches.
+
+ * A has one fix since it was merged up to "next".
+
+ * B has finished.  It has been fully merged up to "master" and "next",
+   and is ready to be deleted.
+
+ * C has not merged to "next" at all.
+
+We would want to allow C to be rebased, refuse A, and encourage
+B to be deleted.
+
+To compute (1):
+
+	git rev-list ^master ^topic next
+	git rev-list ^master        next
+
+	if these match, topic has not merged in next at all.
+
+To compute (2):
+
+	git rev-list master..topic
+
+	if this is empty, it is fully merged to "master".
+
+DOC_END
+</file>
+
+<file path="client-side/.git/hooks/pre-receive.sample">
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+if test -n "$GIT_PUSH_OPTION_COUNT"
+then
+	i=0
+	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+	do
+		eval "value=\$GIT_PUSH_OPTION_$i"
+		case "$value" in
+		echoback=*)
+			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+			;;
+		reject)
+			exit 1
+		esac
+		i=$((i + 1))
+	done
+fi
+</file>
+
+<file path="client-side/.git/hooks/prepare-commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+# case "$COMMIT_SOURCE,$SHA1" in
+#  ,|template,)
+#    /usr/bin/perl -i.bak -pe '
+#       print "\n" . `git diff --cached --name-status -r`
+# 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+#  *) ;;
+# esac
+
+# SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+# if test -z "$COMMIT_SOURCE"
+# then
+#   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+# fi
+</file>
+
+<file path="client-side/.git/hooks/push-to-checkout.sample">
+#!/bin/sh
+
+# An example hook script to update a checked-out tree on a git push.
+#
+# This hook is invoked by git-receive-pack(1) when it reacts to git
+# push and updates reference(s) in its repository, and when the push
+# tries to update the branch that is currently checked out and the
+# receive.denyCurrentBranch configuration variable is set to
+# updateInstead.
+#
+# By default, such a push is refused if the working tree and the index
+# of the remote repository has any difference from the currently
+# checked out commit; when both the working tree and the index match
+# the current commit, they are updated to match the newly pushed tip
+# of the branch. This hook is to be used to override the default
+# behaviour; however the code below reimplements the default behaviour
+# as a starting point for convenient modification.
+#
+# The hook receives the commit with which the tip of the current
+# branch is going to be updated:
+commit=$1
+
+# It can exit with a non-zero status to refuse the push (when it does
+# so, it must not modify the index or the working tree).
+die () {
+	echo >&2 "$*"
+	exit 1
+}
+
+# Or it can make any necessary changes to the working tree and to the
+# index to bring them to the desired state when the tip of the current
+# branch is updated to the new commit, and exit with a zero status.
+#
+# For example, the hook can simply run git read-tree -u -m HEAD "$1"
+# in order to emulate git fetch that is run in the reverse direction
+# with git push, as the two-tree form of git read-tree -u -m is
+# essentially the same as git switch or git checkout that switches
+# branches while keeping the local changes in the working tree that do
+# not interfere with the difference between the branches.
+
+# The below is a more-or-less exact translation to shell of the C code
+# for the default behaviour for git's push-to-checkout hook defined in
+# the push_to_deploy() function in builtin/receive-pack.c.
+#
+# Note that the hook will be executed from the repository directory,
+# not from the working tree, so if you want to perform operations on
+# the working tree, you will have to adapt your code accordingly, e.g.
+# by adding "cd .." or using relative paths.
+
+if ! git update-index -q --ignore-submodules --refresh
+then
+	die "Up-to-date check failed"
+fi
+
+if ! git diff-files --quiet --ignore-submodules --
+then
+	die "Working directory has unstaged changes"
+fi
+
+# This is a rough translation of:
+#
+#   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+if git cat-file -e HEAD 2>/dev/null
+then
+	head=HEAD
+else
+	head=$(git hash-object -t tree --stdin </dev/null)
+fi
+
+if ! git diff-index --quiet --cached --ignore-submodules $head --
+then
+	die "Working directory has staged changes"
+fi
+
+if ! git read-tree -u -m "$commit"
+then
+	die "Could not update working tree to new HEAD"
+fi
+</file>
+
+<file path="client-side/.git/hooks/update.sample">
+#!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+</file>
+
+<file path="client-side/.git/info/exclude">
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+</file>
+
+<file path="client-side/.git/logs/refs/heads/main">
+0000000000000000000000000000000000000000 0afa50666fff2dbda43cb9f494652570dedd0c1b RobertAisand <klee.one@mail.ru> 1776494043 +0300	commit (initial): Initial commit from Create Next App
+0afa50666fff2dbda43cb9f494652570dedd0c1b 600e0c6b787804298fa12e2b13876750c269a4ba RobertAisand <klee.one@mail.ru> 1776497194 +0300	commit: feat: initial commit
+</file>
+
+<file path="client-side/.git/logs/HEAD">
+0000000000000000000000000000000000000000 0afa50666fff2dbda43cb9f494652570dedd0c1b RobertAisand <klee.one@mail.ru> 1776494043 +0300	commit (initial): Initial commit from Create Next App
+0afa50666fff2dbda43cb9f494652570dedd0c1b 600e0c6b787804298fa12e2b13876750c269a4ba RobertAisand <klee.one@mail.ru> 1776497194 +0300	commit: feat: initial commit
+</file>
+
+<file path="client-side/.git/refs/heads/main">
+600e0c6b787804298fa12e2b13876750c269a4ba
+</file>
+
+<file path="client-side/.git/COMMIT_EDITMSG">
+feat: initial commit
+</file>
+
+<file path="client-side/.git/config">
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+</file>
+
+<file path="client-side/.git/description">
+Unnamed repository; edit this file 'description' to name the repository.
+</file>
+
+<file path="client-side/.git/HEAD">
+ref: refs/heads/main
+</file>
+
+<file path="client-side/public/file.svg">
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 13.5V5.41a1 1 0 0 0-.3-.7L9.8.29A1 1 0 0 0 9.08 0H1.5v13.5A2.5 2.5 0 0 0 4 16h8a2.5 2.5 0 0 0 2.5-2.5m-1.5 0v-7H8v-5H3v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1M9.5 5V2.12L12.38 5zM5.13 5h-.62v1.25h2.12V5zm-.62 3h7.12v1.25H4.5zm.62 3h-.62v1.25h7.12V11z" clip-rule="evenodd" fill="#666" fill-rule="evenodd"/></svg>
+</file>
+
+<file path="client-side/public/globe.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+</file>
+
+<file path="client-side/public/next.svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>
+</file>
+
+<file path="client-side/public/vercel.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+</file>
+
+<file path="client-side/public/window.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+</file>
+
+<file path="client-side/src/app/(root)/Home.tsx">
+export function Home() {
+    return <div> Home </div>
+}
+</file>
+
+<file path="client-side/src/app/(root)/layout.tsx">
+import type { PropsWithChildren } from "react";
+
+export default function Layout({ children }: PropsWithChildren<unknown>) {
+    return <div>{children}</div>;
+}
+</file>
+
+<file path="client-side/src/app/(root)/page.tsx">
+import type { Metadata } from "next";
+import { Home } from "./Home";
+
+export const metadata: Metadata = {
+  title: "Домашняя страница"
+}
+
+export default function HomePage() {
+    return <Home />
+}
+</file>
+
+<file path="client-side/src/app/auth/Auth.tsx">
+export function Auth() {
+    return <div> Auth </div>
+}
+</file>
+
+<file path="client-side/src/app/auth/page.tsx">
+import type { Metadata } from "next";
+import { Auth } from "./Auth";
+
+
+export const metadata: Metadata = {
+  title: "Авторизация"
+}
+
+export default function AuthPage() {
+    return <Auth />
+}
+</file>
+
+<file path="client-side/src/app/globals.css">
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.141 0.005 285.823);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.141 0.005 285.823);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.511 0.096 186.391);
+  --primary-foreground: oklch(0.984 0.014 180.72);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
+  --accent-foreground: oklch(0.21 0.006 285.885);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.705 0.015 286.067);
+  --chart-1: oklch(0.871 0.006 286.286);
+  --chart-2: oklch(0.552 0.016 285.938);
+  --chart-3: oklch(0.442 0.017 285.786);
+  --chart-4: oklch(0.37 0.013 285.805);
+  --chart-5: oklch(0.274 0.006 286.033);
+  --radius: 0.45rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.141 0.005 285.823);
+  --sidebar-primary: oklch(0.6 0.118 184.704);
+  --sidebar-primary-foreground: oklch(0.984 0.014 180.72);
+  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
+  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-ring: oklch(0.705 0.015 286.067);
+}
+
+.dark {
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.437 0.078 188.216);
+  --primary-foreground: oklch(0.984 0.014 180.72);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.552 0.016 285.938);
+  --chart-1: oklch(0.871 0.006 286.286);
+  --chart-2: oklch(0.552 0.016 285.938);
+  --chart-3: oklch(0.442 0.017 285.786);
+  --chart-4: oklch(0.37 0.013 285.805);
+  --chart-5: oklch(0.274 0.006 286.033);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.704 0.14 182.503);
+  --sidebar-primary-foreground: oklch(0.277 0.046 192.524);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.552 0.016 285.938);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+</file>
+
+<file path="client-side/src/app/layout.tsx">
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import { SITE_DESCRIPTION, SITE_NAME } from "constants/seo.constants";
+import { Providers } from "./providers";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: {
+    absolute: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="ru"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col">
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}
+</file>
+
+<file path="client-side/src/app/providers.tsx">
+'use client'
+
+
+import { PropsWithChildren, useState } from "react";
+import { QueryClient, QueryClientProvider} from '@tanstack/react-query'
+import { Toaster } from "react-hot-toast";
+
+export function Providers({ children }: PropsWithChildren) {
+    const [client] = useState(
+        new QueryClient({
+            defaultOptions: {
+                queries: {
+                    refetchOnWindowFocus: false
+                }
+            }
+        })
+    )
+
+    return (
+        <QueryClientProvider client={client}>  
+            <Toaster />
+            {children}
+
+        </QueryClientProvider>
+    )
+}
+</file>
+
+<file path="client-side/src/components/ui/button.tsx">
+import * as React from "react"
+import { cva, type VariantProps } from "class-variance-authority"
+import { Slot } from "radix-ui"
+
+import { cn } from "lib/utils"
+
+const buttonVariants = cva(
+  "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+        outline:
+          "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+        secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+        ghost:
+          "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+        destructive:
+          "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
+        link: "text-primary underline-offset-4 hover:underline",
+      },
+      size: {
+        default:
+          "h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+        xs: "h-6 gap-1 rounded-[min(var(--radius-md),10px)] px-2 text-xs in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3",
+        sm: "h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
+        lg: "h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+        icon: "size-8",
+        "icon-xs":
+          "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-lg [&_svg:not([class*='size-'])]:size-3",
+        "icon-sm":
+          "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
+        "icon-lg": "size-9",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  }
+)
+
+function Button({
+  className,
+  variant = "default",
+  size = "default",
+  asChild = false,
+  ...props
+}: React.ComponentProps<"button"> &
+  VariantProps<typeof buttonVariants> & {
+    asChild?: boolean
+  }) {
+  const Comp = asChild ? Slot.Root : "button"
+
+  return (
+    <Comp
+      data-slot="button"
+      data-variant={variant}
+      data-size={size}
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    />
+  )
+}
+
+export { Button, buttonVariants }
+</file>
+
+<file path="client-side/src/constants/seo.constants.ts">
+export const NO_INDEX_PAGE = { robots: {index: false,fallow: false} }
+
+export const SITE_NAME = 'GreenArt'
+export const SITE_DESCRIPTION =
+    'Добро пожаловать)'
+</file>
+
+<file path="client-side/src/lib/utils.ts">
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+</file>
+
+<file path="client-side/src/shared/types/auth.interface.ts">
+import { IUser } from "./user.interface";
+
+export interface IAuthForm {
+    email: string;
+    password: string;
+    name?: string; // Опционально для регистрации
+}
+
+export interface IAuthResponse {
+    user: IUser;
+    accessToken: string;
+}
+</file>
+
+<file path="client-side/src/shared/types/cart.interface.ts">
+import { IProduct } from './product.interface';
+
+export interface ICartItem {
+    id: string;
+    product: IProduct;
+    quantity: number;
+    price: number; 
+}
+
+export interface ICart {
+    items: ICartItem[];
+    total: number;
+}
+</file>
+
+<file path="client-side/src/shared/types/category.interface.ts">
+export interface ICategory {
+    id: string;
+    createdAt: string; 
+    title: string;
+    description: string;
+    imageUrl: string;
+    slug: string; 
+}
+
+export type ICategoryInput = Pick<ICategory, 'title' | 'description' | 'imageUrl' | 'slug'>;
+</file>
+
+<file path="client-side/src/shared/types/order.interface.ts">
+import { IProduct } from './product.interface';
+import { IUser } from './user.interface';
+
+export enum EnumOrderStatus {
+    PENDING = 'PENDING',
+    PAYED = 'PAYED',
+    SHIPPED = 'SHIPPED',
+    DELIVERED = 'DELIVERED',
+    CANCELLED = 'CANCELLED'
+}
+
+export interface IOrderItem {
+    id: string;
+    createdAt: string;
+    updatedAt: string;
+    quantity: number;
+    price: number;
+    product: IProduct;
+}
+
+export interface IOrder {
+    id: string;
+    createdAt: string;
+    updatedAt: string;
+    status: EnumOrderStatus;
+    items: IOrderItem[];
+    total: number;
+    user: IUser;
+}
+</file>
+
+<file path="client-side/src/shared/types/product.interface.ts">
+import { ICategory } from "./category.interface";
+
+export interface IProduct {
+    id: string;
+    createdAt: string; // Исправлено на стандарт
+    title: string;
+    description: string;
+    price: number;
+    imageUrl: string;
+    slug: string; // Нужно для URL магазина
+    category: ICategory;
+}
+
+export interface IProductInput 
+    extends Pick<IProduct, 'title' | 'description' | 'price' | 'imageUrl' | 'slug'> {
+        categoryId: string; // При создании передаем ID категории
+    }
+</file>
+
+<file path="client-side/src/shared/types/user.interface.ts">
+import { IOrder } from "./order.interface";
+
+export interface IUser {
+    id: string;
+    name: string;
+    email: string;
+    role: "user" | "admin";
+    orders: IOrder[];
+}
+</file>
+
+<file path="client-side/src/utils/clsx.ts">
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+    return twMerge(clsx(inputs))}
+</file>
+
+<file path="client-side/.gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+</file>
+
+<file path="client-side/.prettierrc">
+{
+    "trailingComma": "none",
+    "tabWidth": 4,
+    "useTabs": true,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "arrowParens": "avoid",
+    "importOrder": [
+            "<THIRD_PARTY_MODULES>",
+            "api/(.*)$",
+            "app/(.*)$",
+            "components/(.*)$",
+            "config/(.*)$",
+            "constants/(.*)$",
+            "hooks/(.*)$",
+            "services/(.*)$",
+            "shared/(.*)$",
+            "stores/(.*)$",
+            "utils/(.*)$",
+            "^../(.*)$",
+            "^./(.*)$",
+            "(.scss)$"
+        ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "plugins": ["@trivago/prettier-plugin-sort-imports"]
+}
+</file>
+
+<file path="client-side/CLAUDE.md">
+@AGENTS.md
+</file>
+
+<file path="client-side/components.json">
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "radix-nova",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "src/app/globals.css",
+    "baseColor": "zinc",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "rtl": false,
+  "aliases": {
+    "components": "src/components",
+    "utils": "src/lib/utils",
+    "ui": "src/components/ui",
+    "hooks": "src/hooks",
+    "lib": "src/lib"
+  },
+  "menuColor": "default",
+  "menuAccent": "subtle",
+  "registries": {}
+}
+</file>
+
+<file path="client-side/eslint.config.mjs">
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
+]);
+
+export default eslintConfig;
+</file>
+
+<file path="client-side/next.config.ts">
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  env: {
+    APP_ENV: process.env.APP_ENV,
+    APP_URL: process.env.APP_URL,
+    APP_DOMAIN: process.env.APP_DOMAIN,
+    SERVER_URL: process.env.SERVER_URL,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars.yandex.net",
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+    ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/upload/:path*",
+        destination: `${process.env.SERVER_URL}/upload/:path*`
+      }
+    ]
+    
+  }
+};
+
+export default nextConfig;
+</file>
+
+<file path="client-side/package.json">
+{
+  "name": "client-side",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@radix-ui/react-checkbox": "^1.3.3",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@tanstack/react-query": "^5.99.0",
+    "axios": "^1.15.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "geist": "^1.7.0",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^1.8.0",
+    "next": "16.2.4",
+    "radix-ui": "^1.4.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.6.0",
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.99.0",
+    "shadcn": "^4.3.0",
+    "tailwind-merge": "^3.5.0",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "prettier": "^3.8.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ]
+}
+</file>
+
+<file path="client-side/postcss.config.mjs">
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+
+export default config;
+</file>
+
+<file path="client-side/README.md">
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</file>
+
+<file path="client-side/tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "components/*": ["./src/components/*"],
+      "ui/*": ["./src/components/ui/*"],
+      "lib/*": ["./src/lib/*"],
+      "api/*": ["./src/api/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "constants/*": ["./src/constants/*"],
+      "stores/*": ["./src/stores/*"],
+      "types/*": ["./src/types/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+</file>
+
+<file path="server-side/.git/gk/config">
+[branch "main"]
+	gk-last-accessed = 2026-04-23T07:53:04.974Z
+	gk-last-modified = 2026-04-15T08:53:11.961Z
+</file>
+
+<file path="server-side/.git/hooks/applypatch-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.  The hook is
+# allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "applypatch-msg".
+
+. git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+:
+</file>
+
+<file path="server-side/.git/hooks/commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+# Uncomment the below to add a Signed-off-by line to the message.
+# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+# hook is more suited to it.
+#
+# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+
+# This example catches duplicate Signed-off-by lines.
+
+test "" = "$(grep '^Signed-off-by: ' "$1" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	exit 1
+}
+</file>
+
+<file path="server-side/.git/hooks/fsmonitor-watchman.sample">
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IPC::Open2;
+
+# An example hook script to integrate Watchman
+# (https://facebook.github.io/watchman/) with git to speed up detecting
+# new and modified files.
+#
+# The hook is passed a version (currently 2) and last update token
+# formatted as a string and outputs to stdout a new update token and
+# all files that have been modified since the update token. Paths must
+# be relative to the root of the working tree and separated by a single NUL.
+#
+# To enable this hook, rename this file to "query-watchman" and set
+# 'git config core.fsmonitor .git/hooks/query-watchman'
+#
+my ($version, $last_update_token) = @ARGV;
+
+# Uncomment for debugging
+# print STDERR "$0 $version $last_update_token\n";
+
+# Check the hook interface version
+if ($version ne 2) {
+	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+	    "Falling back to scanning...\n";
+}
+
+my $git_work_tree = get_working_dir();
+
+my $retry = 1;
+
+my $json_pkg;
+eval {
+	require JSON::XS;
+	$json_pkg = "JSON::XS";
+	1;
+} or do {
+	require JSON::PP;
+	$json_pkg = "JSON::PP";
+};
+
+launch_watchman();
+
+sub launch_watchman {
+	my $o = watchman_query();
+	if (is_work_tree_watched($o)) {
+		output_result($o->{clock}, @{$o->{files}});
+	}
+}
+
+sub output_result {
+	my ($clockid, @files) = @_;
+
+	# Uncomment for debugging watchman output
+	# open (my $fh, ">", ".git/watchman-output.out");
+	# binmode $fh, ":utf8";
+	# print $fh "$clockid\n@files\n";
+	# close $fh;
+
+	binmode STDOUT, ":utf8";
+	print $clockid;
+	print "\0";
+	local $, = "\0";
+	print @files;
+}
+
+sub watchman_clock {
+	my $response = qx/watchman clock "$git_work_tree"/;
+	die "Failed to get clock id on '$git_work_tree'.\n" .
+		"Falling back to scanning...\n" if $? != 0;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub watchman_query {
+	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+	or die "open2() failed: $!\n" .
+	"Falling back to scanning...\n";
+
+	# In the query expression below we're asking for names of files that
+	# changed since $last_update_token but not from the .git folder.
+	#
+	# To accomplish this, we're using the "since" generator to use the
+	# recency index to select candidate nodes and "fields" to limit the
+	# output to file names only. Then we're using the "expression" term to
+	# further constrain the results.
+	my $last_update_line = "";
+	if (substr($last_update_token, 0, 1) eq "c") {
+		$last_update_token = "\"$last_update_token\"";
+		$last_update_line = qq[\n"since": $last_update_token,];
+	}
+	my $query = <<"	END";
+		["query", "$git_work_tree", {$last_update_line
+			"fields": ["name"],
+			"expression": ["not", ["dirname", ".git"]]
+		}]
+	END
+
+	# Uncomment for debugging the watchman query
+	# open (my $fh, ">", ".git/watchman-query.json");
+	# print $fh $query;
+	# close $fh;
+
+	print CHLD_IN $query;
+	close CHLD_IN;
+	my $response = do {local $/; <CHLD_OUT>};
+
+	# Uncomment for debugging the watch response
+	# open ($fh, ">", ".git/watchman-response.json");
+	# print $fh $response;
+	# close $fh;
+
+	die "Watchman: command returned no output.\n" .
+	"Falling back to scanning...\n" if $response eq "";
+	die "Watchman: command returned invalid output: $response\n" .
+	"Falling back to scanning...\n" unless $response =~ /^\{/;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub is_work_tree_watched {
+	my ($output) = @_;
+	my $error = $output->{error};
+	if ($retry > 0 and $error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+		$retry--;
+		my $response = qx/watchman watch "$git_work_tree"/;
+		die "Failed to make watchman watch '$git_work_tree'.\n" .
+		    "Falling back to scanning...\n" if $? != 0;
+		$output = $json_pkg->new->utf8->decode($response);
+		$error = $output->{error};
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		# Uncomment for debugging watchman output
+		# open (my $fh, ">", ".git/watchman-output.out");
+		# close $fh;
+
+		# Watchman will always return all files on the first query so
+		# return the fast "everything is dirty" flag to git and do the
+		# Watchman query just to get it over with now so we won't pay
+		# the cost in git to look up each individual file.
+		my $o = watchman_clock();
+		$error = $output->{error};
+
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		output_result($o->{clock}, ("/"));
+		$last_update_token = $o->{clock};
+
+		eval { launch_watchman() };
+		return 0;
+	}
+
+	die "Watchman: $error.\n" .
+	"Falling back to scanning...\n" if $error;
+
+	return 1;
+}
+
+sub get_working_dir {
+	my $working_dir;
+	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+		$working_dir = Win32::GetCwd();
+		$working_dir =~ tr/\\/\//;
+	} else {
+		require Cwd;
+		$working_dir = Cwd::cwd();
+	}
+
+	return $working_dir;
+}
+</file>
+
+<file path="server-side/.git/hooks/post-update.sample">
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+exec git update-server-info
+</file>
+
+<file path="server-side/.git/hooks/pre-applypatch.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed
+# by applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+. git-sh-setup
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+:
+</file>
+
+<file path="server-side/.git/hooks/pre-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# If you want to allow non-ASCII filenames set this variable to true.
+allownonascii=$(git config --type=bool hooks.allownonascii)
+
+# Redirect output to stderr.
+exec 1>&2
+
+# Cross platform projects tend to avoid non-ASCII filenames; prevent
+# them from being added to the repository. We exploit the fact that the
+# printable range starts at the space character and ends with tilde.
+if [ "$allownonascii" != "true" ] &&
+	# Note that the use of brackets around a tr range is ok here, (it's
+	# even required, for portability to Solaris 10's /usr/bin/tr), since
+	# the square bracket bytes happen to fall in the designated range.
+	test $(git diff --cached --name-only --diff-filter=A -z $against |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+then
+	cat <<\EOF
+Error: Attempt to add a non-ASCII file name.
+
+This can cause problems if you want to work with people on other platforms.
+
+To be portable it is advisable to rename the file.
+
+If you know what you are doing you can disable this check using:
+
+  git config hooks.allownonascii true
+EOF
+	exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
+</file>
+
+<file path="server-side/.git/hooks/pre-merge-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git merge" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message to
+# stderr if it wants to stop the merge commit.
+#
+# To enable this hook, rename this file to "pre-merge-commit".
+
+. git-sh-setup
+test -x "$GIT_DIR/hooks/pre-commit" &&
+        exec "$GIT_DIR/hooks/pre-commit"
+:
+</file>
+
+<file path="server-side/.git/hooks/pre-push.sample">
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local oid> <remote ref> <remote oid>
+#
+# This sample shows how to prevent push of commits where the log message starts
+# with "WIP" (work in progress).
+
+remote="$1"
+url="$2"
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+
+while read local_ref local_oid remote_ref remote_oid
+do
+	if test "$local_oid" = "$zero"
+	then
+		# Handle delete
+		:
+	else
+		if test "$remote_oid" = "$zero"
+		then
+			# New branch, examine all commits
+			range="$local_oid"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_oid..$local_oid"
+		fi
+
+		# Check for WIP commit
+		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+		if test -n "$commit"
+		then
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
+</file>
+
+<file path="server-side/.git/hooks/pre-rebase.sample">
+#!/bin/sh
+#
+# Copyright (c) 2006, 2008 Junio C Hamano
+#
+# The "pre-rebase" hook is run just before "git rebase" starts doing
+# its job, and can prevent the command from running by exiting with
+# non-zero status.
+#
+# The hook is called with the following parameters:
+#
+# $1 -- the upstream the series was forked from.
+# $2 -- the branch being rebased (or empty when rebasing the current branch).
+#
+# This sample shows how to prevent topic branches that are already
+# merged to 'next' branch from getting rebased, because allowing it
+# would result in rebasing already published history.
+
+publish=next
+basebranch="$1"
+if test "$#" = 2
+then
+	topic="refs/heads/$2"
+else
+	topic=`git symbolic-ref HEAD` ||
+	exit 0 ;# we do not interrupt rebasing detached HEAD
+fi
+
+case "$topic" in
+refs/heads/??/*)
+	;;
+*)
+	exit 0 ;# we do not interrupt others.
+	;;
+esac
+
+# Now we are dealing with a topic branch being rebased
+# on top of master.  Is it OK to rebase it?
+
+# Does the topic really exist?
+git show-ref -q "$topic" || {
+	echo >&2 "No such branch $topic"
+	exit 1
+}
+
+# Is topic fully merged to master?
+not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+if test -z "$not_in_master"
+then
+	echo >&2 "$topic is fully merged to master; better remove it."
+	exit 1 ;# we could allow it, but there is no point.
+fi
+
+# Is topic ever merged to next?  If so you should not be rebasing it.
+only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+only_next_2=`git rev-list ^master           ${publish} | sort`
+if test "$only_next_1" = "$only_next_2"
+then
+	not_in_topic=`git rev-list "^$topic" master`
+	if test -z "$not_in_topic"
+	then
+		echo >&2 "$topic is already up to date with master"
+		exit 1 ;# we could allow it, but there is no point.
+	else
+		exit 0
+	fi
+else
+	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+	/usr/bin/perl -e '
+		my $topic = $ARGV[0];
+		my $msg = "* $topic has commits already merged to public branch:\n";
+		my (%not_in_next) = map {
+			/^([0-9a-f]+) /;
+			($1 => 1);
+		} split(/\n/, $ARGV[1]);
+		for my $elem (map {
+				/^([0-9a-f]+) (.*)$/;
+				[$1 => $2];
+			} split(/\n/, $ARGV[2])) {
+			if (!exists $not_in_next{$elem->[0]}) {
+				if ($msg) {
+					print STDERR $msg;
+					undef $msg;
+				}
+				print STDERR " $elem->[1]\n";
+			}
+		}
+	' "$topic" "$not_in_next" "$not_in_master"
+	exit 1
+fi
+
+<<\DOC_END
+
+This sample hook safeguards topic branches that have been
+published from being rewound.
+
+The workflow assumed here is:
+
+ * Once a topic branch forks from "master", "master" is never
+   merged into it again (either directly or indirectly).
+
+ * Once a topic branch is fully cooked and merged into "master",
+   it is deleted.  If you need to build on top of it to correct
+   earlier mistakes, a new topic branch is created by forking at
+   the tip of the "master".  This is not strictly necessary, but
+   it makes it easier to keep your history simple.
+
+ * Whenever you need to test or publish your changes to topic
+   branches, merge them into "next" branch.
+
+The script, being an example, hardcodes the publish branch name
+to be "next", but it is trivial to make it configurable via
+$GIT_DIR/config mechanism.
+
+With this workflow, you would want to know:
+
+(1) ... if a topic branch has ever been merged to "next".  Young
+    topic branches can have stupid mistakes you would rather
+    clean up before publishing, and things that have not been
+    merged into other branches can be easily rebased without
+    affecting other people.  But once it is published, you would
+    not want to rewind it.
+
+(2) ... if a topic branch has been fully merged to "master".
+    Then you can delete it.  More importantly, you should not
+    build on top of it -- other people may already want to
+    change things related to the topic as patches against your
+    "master", so if you need further changes, it is better to
+    fork the topic (perhaps with the same name) afresh from the
+    tip of "master".
+
+Let's look at this example:
+
+		   o---o---o---o---o---o---o---o---o---o "next"
+		  /       /           /           /
+		 /   a---a---b A     /           /
+		/   /               /           /
+	       /   /   c---c---c---c B         /
+	      /   /   /             \         /
+	     /   /   /   b---b C     \       /
+	    /   /   /   /             \     /
+    ---o---o---o---o---o---o---o---o---o---o---o "master"
+
+
+A, B and C are topic branches.
+
+ * A has one fix since it was merged up to "next".
+
+ * B has finished.  It has been fully merged up to "master" and "next",
+   and is ready to be deleted.
+
+ * C has not merged to "next" at all.
+
+We would want to allow C to be rebased, refuse A, and encourage
+B to be deleted.
+
+To compute (1):
+
+	git rev-list ^master ^topic next
+	git rev-list ^master        next
+
+	if these match, topic has not merged in next at all.
+
+To compute (2):
+
+	git rev-list master..topic
+
+	if this is empty, it is fully merged to "master".
+
+DOC_END
+</file>
+
+<file path="server-side/.git/hooks/pre-receive.sample">
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+if test -n "$GIT_PUSH_OPTION_COUNT"
+then
+	i=0
+	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+	do
+		eval "value=\$GIT_PUSH_OPTION_$i"
+		case "$value" in
+		echoback=*)
+			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+			;;
+		reject)
+			exit 1
+		esac
+		i=$((i + 1))
+	done
+fi
+</file>
+
+<file path="server-side/.git/hooks/prepare-commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+# case "$COMMIT_SOURCE,$SHA1" in
+#  ,|template,)
+#    /usr/bin/perl -i.bak -pe '
+#       print "\n" . `git diff --cached --name-status -r`
+# 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+#  *) ;;
+# esac
+
+# SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+# if test -z "$COMMIT_SOURCE"
+# then
+#   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+# fi
+</file>
+
+<file path="server-side/.git/hooks/push-to-checkout.sample">
+#!/bin/sh
+
+# An example hook script to update a checked-out tree on a git push.
+#
+# This hook is invoked by git-receive-pack(1) when it reacts to git
+# push and updates reference(s) in its repository, and when the push
+# tries to update the branch that is currently checked out and the
+# receive.denyCurrentBranch configuration variable is set to
+# updateInstead.
+#
+# By default, such a push is refused if the working tree and the index
+# of the remote repository has any difference from the currently
+# checked out commit; when both the working tree and the index match
+# the current commit, they are updated to match the newly pushed tip
+# of the branch. This hook is to be used to override the default
+# behaviour; however the code below reimplements the default behaviour
+# as a starting point for convenient modification.
+#
+# The hook receives the commit with which the tip of the current
+# branch is going to be updated:
+commit=$1
+
+# It can exit with a non-zero status to refuse the push (when it does
+# so, it must not modify the index or the working tree).
+die () {
+	echo >&2 "$*"
+	exit 1
+}
+
+# Or it can make any necessary changes to the working tree and to the
+# index to bring them to the desired state when the tip of the current
+# branch is updated to the new commit, and exit with a zero status.
+#
+# For example, the hook can simply run git read-tree -u -m HEAD "$1"
+# in order to emulate git fetch that is run in the reverse direction
+# with git push, as the two-tree form of git read-tree -u -m is
+# essentially the same as git switch or git checkout that switches
+# branches while keeping the local changes in the working tree that do
+# not interfere with the difference between the branches.
+
+# The below is a more-or-less exact translation to shell of the C code
+# for the default behaviour for git's push-to-checkout hook defined in
+# the push_to_deploy() function in builtin/receive-pack.c.
+#
+# Note that the hook will be executed from the repository directory,
+# not from the working tree, so if you want to perform operations on
+# the working tree, you will have to adapt your code accordingly, e.g.
+# by adding "cd .." or using relative paths.
+
+if ! git update-index -q --ignore-submodules --refresh
+then
+	die "Up-to-date check failed"
+fi
+
+if ! git diff-files --quiet --ignore-submodules --
+then
+	die "Working directory has unstaged changes"
+fi
+
+# This is a rough translation of:
+#
+#   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+if git cat-file -e HEAD 2>/dev/null
+then
+	head=HEAD
+else
+	head=$(git hash-object -t tree --stdin </dev/null)
+fi
+
+if ! git diff-index --quiet --cached --ignore-submodules $head --
+then
+	die "Working directory has staged changes"
+fi
+
+if ! git read-tree -u -m "$commit"
+then
+	die "Could not update working tree to new HEAD"
+fi
+</file>
+
+<file path="server-side/.git/hooks/update.sample">
+#!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+</file>
+
+<file path="server-side/.git/info/exclude">
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+</file>
+
+<file path="server-side/.git/refs/heads/main">
+2cc1d3894ce4db7ccd9a328e2cc28ee8878a31c5
+</file>
+
+<file path="server-side/.git/refs/remotes/origin/main">
+2cc1d3894ce4db7ccd9a328e2cc28ee8878a31c5
+</file>
+
+<file path="server-side/.git/COMMIT_EDITMSG">
+Commit with prot telegram bot
+</file>
+
+<file path="server-side/.git/config">
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/RobertAisand/GreenArt.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+</file>
+
+<file path="server-side/.git/description">
+Unnamed repository; edit this file 'description' to name the repository.
+</file>
+
+<file path="server-side/.git/HEAD">
+ref: refs/heads/main
+</file>
+
+<file path="server-side/prisma/schema.prisma">
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id         String       @id @default(cuid())
+  createdAt  DateTime     @default(now()) @map("created_at")
+  updatedAt  DateTime     @updatedAt @map("updated_at")
+  email      String       @unique
+  password   String?
+  name       String       @default("Не указано")
+  picture    String       @default("/uploads/no-user-images.png")
+  role       EnumUserRole @default(USER)
+  telegramId String?
+  orders     Order[]
+
+  @@map("user")
+}
+
+model Product {
+  id          String      @id @default(cuid())
+  createdAt   DateTime    @default(now()) @map("created_at")
+  updatedAt   DateTime    @updatedAt @map("updated_at")
+  title       String
+  description String
+  price       Int
+  images      String[]
+  categoryId  String?     @map("category_id")
+  orderItems  OrderItem[]
+  category    Category?   @relation(fields: [categoryId], references: [id])
+
+  @@map("product")
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+  title       String
+  description String
+  products    Product[]
+
+  @@map("category")
+}
+
+model Order {
+  id              String           @id @default(cuid())
+  createdAt       DateTime         @default(now()) @map("created_at")
+  updatedAt       DateTime         @updatedAt @map("updated_at")
+  status          EnumOrderStatus  @default(PENDING)
+  total           Int
+  customerName    String
+  phone           String
+  comment         String?
+  userId          String           @map("user_id")
+  deliveryAddress String
+  deliveryDate    DateTime
+  deliveryType    EnumDeliveryType
+  paymentLink     String?
+  shippingPrice   Int              @default(0)
+  user            User             @relation(fields: [userId], references: [id])
+  items           OrderItem[]
+
+  @@map("order")
+}
+
+model OrderItem {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  quantity  Int
+  price     Int
+  orderId   String?  @map("order_id")
+  productId String   @map("product_id")
+  order     Order?   @relation(fields: [orderId], references: [id])
+  product   Product  @relation(fields: [productId], references: [id])
+
+  @@map("order_item")
+}
+
+enum EnumUserRole {
+  USER
+  ADMIN
+  WORKER
+}
+
+enum EnumDeliveryType {
+  PICKUP
+  COURIER
+}
+
+enum EnumOrderStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+  IN_DELIVERY
+  IN_PROGRESS
+  AWAITING_PAYMENT
+}
+</file>
+
+<file path="server-side/src/auth/decorators/auth.decorator.ts">
+import { UseGuards } from '@nestjs/common'
+import { JwtAuthGuard } from '../guards/jwt-auth.guard'
+
+export const Auth = () => UseGuards(JwtAuthGuard)
+</file>
+
+<file path="server-side/src/auth/decorators/roles.decorator.ts">
+import { SetMetadata } from '@nestjs/common'
+
+export const Roles = (...roles: string[]) => SetMetadata('roles', roles)
+</file>
+
+<file path="server-side/src/auth/decorators/user.decorator.ts">
+import { createParamDecorator, ExecutionContext } from '@nestjs/common'
+
+export const CurrentUser = createParamDecorator(
+  (data: string, ctx: ExecutionContext) => {
+    const request = ctx.switchToHttp().getRequest()
+    const user = request.user
+
+    return data ? user?.[data] : user
+  },
+)
+</file>
+
+<file path="server-side/src/auth/dto/auth.dto.ts">
+import { IsEmail, IsOptional, IsString, MinLength, MaxLength, IsNotEmpty } from 'class-validator'
+
+export class AuthDto {
+	@IsOptional()
+	@IsString()
+	@MaxLength(50)
+	name?: string
+
+	@IsEmail({}, { message: 'Введите корректный email' })
+    @IsNotEmpty({ message: 'Почта обязательна' })
+    email: string
+
+	@IsString({ message: 'Пароль обязателен' })
+    @IsNotEmpty({ message: 'Пароль обязателен' })
+    @MinLength(6, { message: 'Пароль должен быть не меньше 6 символов' })
+    @MaxLength(128, { message: 'Пароль слишком длинный' }) // Защита от DoS
+    password: string
+}
+</file>
+
+<file path="server-side/src/auth/guards/jwt-auth.guard.ts">
+import { AuthGuard} from '@nestjs/passport'
+import { Injectable, UnauthorizedException } from '@nestjs/common'
+
+@Injectable()
+export class JwtAuthGuard extends AuthGuard('jwt') {
+  handleRequest(err, user, info, context) {
+    if (err || !user) {
+      throw err || new UnauthorizedException();
+    }
+    return user;
+  }
+}
+</file>
+
+<file path="server-side/src/auth/guards/roles.guard.ts">
+import { CanActivate, ExecutionContext, ForbiddenException, Injectable } from '@nestjs/common'
+import { Reflector } from '@nestjs/core'
+
+
+@Injectable()
+export class RolesGuard implements CanActivate {
+  constructor(private reflector: Reflector) {}
+
+  canActivate(context: ExecutionContext): boolean {
+    const requiredRoles = this.reflector.getAllAndOverride<string[]>('roles', [
+      context.getHandler(),
+      context.getClass(),
+    ]);
+    if (!requiredRoles) return true;
+
+    const { user } = context.switchToHttp().getRequest();
+    return requiredRoles.includes(user.role);
+  }
+}
+</file>
+
+<file path="server-side/src/auth/strategies/google.strategy.ts">
+import { Injectable } from '@nestjs/common'
+import { ConfigService } from '@nestjs/config/dist/config.service'
+import { PassportStrategy } from '@nestjs/passport/dist/passport/passport.strategy'
+import { Profile, Strategy } from 'passport-google-oauth20'
+import { VerifiedCallback } from 'passport-jwt'
+
+@Injectable()
+export class GoogleStrategy extends PassportStrategy(Strategy, 'google') {
+	constructor(private configService: ConfigService) {
+		super({
+			clientID: configService.getOrThrow<string>('GOOGLE_CLIENT_ID'),
+			clientSecret: configService.getOrThrow<string>(
+				'GOOGLE_CLIENT_SECRET'
+			),
+			callbackURL:
+				configService.get<string>('SERVER_URL') +
+				'/auth/google/callback',
+			scope: ['profile', 'email']
+		})
+	}
+
+	validate(
+		_accessToken: string,
+		_refreshToken: string,
+		profile: Profile,
+		done: VerifiedCallback
+	) {
+		const { displayName, emails, photos } = profile
+
+		const user = {
+			email: emails?.[0]?.value,
+			name: displayName,
+			picture: photos?.[0]?.value
+		}
+
+		done(null, user)
+	}
+}
+</file>
+
+<file path="server-side/src/auth/strategies/jwt.strategy.ts">
+import { Injectable } from '@nestjs/common'
+import { PassportStrategy } from '@nestjs/passport'
+import { ExtractJwt, Strategy } from 'passport-jwt'
+import { ConfigService } from '@nestjs/config'
+import { UserService } from 'src/user/user.service'
+
+@Injectable()
+export class JwtStrategy extends PassportStrategy(Strategy) {
+	constructor(
+		private configService: ConfigService,
+		private userService: UserService
+	) {
+		super({
+			jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+			ignoreExpiration: false,
+			secretOrKey: configService.getOrThrow<string>('JWT_SECRET')
+		})
+	}
+	// src/auth/strategies/jwt.strategy.ts
+	async validate({ id }: { id: string }) {
+    	const user = await this.userService.getById(id);
+    
+    	return user
+	}
+}
+</file>
+
+<file path="server-side/src/auth/strategies/yandex.strategy.ts">
+import { Injectable } from '@nestjs/common'
+import { ConfigService } from '@nestjs/config/'
+import { PassportStrategy } from '@nestjs/passport'
+import { Profile, Strategy } from 'passport-yandex'
+
+@Injectable()
+export class YandexStrategy extends PassportStrategy(Strategy, 'yandex') {
+	constructor(private configService: ConfigService) {
+		super({
+			clientID: configService.getOrThrow<string>('YANDEX_CLIENT_ID'),
+			clientSecret: configService.getOrThrow<string>(
+				'YANDEX_CLIENT_SECRET'
+			),
+			callbackURL:
+				configService.get<string>('SERVER_URL') +
+				'/auth/yandex/callback'
+		})
+	}
+
+	validate(
+		_accessToken: string,
+		_refreshToken: string,
+		profile: Profile,
+		done: (passportError: Error | null, user: any) => void
+	) {
+		const { username, emails, photos } = profile
+
+		const user = {
+			email: emails?.[0]?.value,
+			name: username,
+			picture: photos?.[0]?.value
+		}
+
+		done(null, user)
+	}
+}
+</file>
+
+<file path="server-side/src/auth/auth.controller.ts">
+import {
+	Body,
+	Controller,
+	Get,
+	HttpCode,
+	Post,
+	Req,
+	Res,
+	UnauthorizedException,
+	UseGuards,
+	UsePipes,
+	ValidationPipe
+} from '@nestjs/common'
+import { AuthService } from './auth.service'
+import { AuthDto } from './dto/auth.dto'
+import type { Request, Response } from 'express'
+import { AuthGuard } from '@nestjs/passport'
+
+@Controller('auth')
+export class AuthController {
+	constructor(private readonly authService: AuthService) {}
+
+	@UsePipes(new ValidationPipe())
+	@HttpCode(200)
+	@Post('login')
+	async login(
+		@Body() dto: AuthDto,
+		@Res({ passthrough: true }) res: Response
+	) {
+		const { refreshToken, ...response } = await this.authService.login(dto)
+
+		this.authService.addRefreshTokenToResponse(res, refreshToken)
+
+		return response
+	}
+
+	@UsePipes(new ValidationPipe())
+	@HttpCode(200)
+	@Post('register')
+	async register(
+		@Body() dto: AuthDto,
+		@Res({ passthrough: true }) res: Response
+	) {
+		const { refreshToken, ...response } =
+			await this.authService.register(dto)
+
+		this.authService.addRefreshTokenToResponse(res, refreshToken)
+
+		return response
+	}
+
+	@UsePipes(new ValidationPipe())
+	@HttpCode(200)
+	@Post('login/access-token')
+	async getNewTokens(
+		@Req() req: Request,
+		@Res({ passthrough: true }) res: Response
+	) {
+		const refreshTokenFromCookies = req.cookies[
+			this.authService.REFRESH_TOKEN_NAME
+		] as string | undefined
+
+		if (!refreshTokenFromCookies) {
+			this.authService.removeRefreshTokenFromResponse(res)
+			throw new UnauthorizedException({
+				message: 'Пользователь не авторизован'
+			})
+		}
+
+		const { refreshToken, ...response } =
+			await this.authService.getNewTokens(refreshTokenFromCookies)
+
+		this.authService.addRefreshTokenToResponse(res, refreshToken)
+
+		return response
+	}
+
+	@HttpCode(200)
+	@Post('logout')
+	logout(@Res({ passthrough: true }) res: Response) {
+		this.authService.removeRefreshTokenFromResponse(res)
+		return true
+	}
+
+	@Get('google')
+	@UseGuards(AuthGuard('google'))
+	async googleAuth() {}
+
+	@Get('google/callback')
+	@UseGuards(AuthGuard('google'))
+	async googleCallback(@Req() req: Request, @Res() res: Response) {
+		const oauthUser = req.user as {
+			email?: string
+			name?: string
+			picture?: string
+		}
+
+		const { refreshToken, accessToken } =
+			await this.authService.validateOAuthUser({
+				user: oauthUser
+			})
+
+		this.authService.addRefreshTokenToResponse(res, refreshToken)
+
+		return res.redirect(
+			`http://localhost:3000/dashboard?accessToken=${encodeURIComponent(accessToken)}`
+		)
+	}
+
+	@Get('yandex')
+	@UseGuards(AuthGuard('yandex'))
+	async yandexAuth() {}
+
+	@Get('yandex/callback')
+	@UseGuards(AuthGuard('yandex'))
+	async yandexCallback(@Req() req: Request, @Res() res: Response) {
+		const oauthUser = req.user as {
+			email?: string
+			name?: string
+			picture?: string
+		}
+
+		const { refreshToken, accessToken } =
+			await this.authService.validateOAuthUser({
+				user: oauthUser
+			})
+
+		this.authService.addRefreshTokenToResponse(res, refreshToken)
+
+		return res.redirect(
+			`http://localhost:3000/dashboard?accessToken=${encodeURIComponent(accessToken)}`
+		)
+	}
+}
+</file>
+
+<file path="server-side/src/auth/auth.module.ts">
+import { Module } from '@nestjs/common'
+import { JwtModule } from '@nestjs/jwt'
+import { PassportModule } from '@nestjs/passport'
+import { ConfigModule, ConfigService } from '@nestjs/config'
+
+import { AuthService } from './auth.service'
+import { AuthController } from './auth.controller'
+import { PrismaService } from '../prisma.service'
+import { JwtStrategy } from './strategies/jwt.strategy'
+import { GoogleStrategy } from './strategies/google.strategy'
+import { YandexStrategy } from './strategies/yandex.strategy'
+import { UserModule } from '../user/user.module'
+import { RolesGuard } from './guards/roles.guard'
+
+@Module({
+	imports: [
+		ConfigModule,
+		UserModule,
+		PassportModule.register({ defaultStrategy: 'jwt' }),
+		JwtModule.registerAsync({
+			imports: [ConfigModule],
+			inject: [ConfigService],
+			useFactory: (configService: ConfigService) => ({
+				secret: configService.getOrThrow<string>('JWT_SECRET'),
+				signOptions: {
+					expiresIn: '24h'
+				}
+			})
+		})
+	],
+	controllers: [AuthController],
+	providers: [
+		AuthService,
+		PrismaService,
+		JwtStrategy,
+		GoogleStrategy,
+		YandexStrategy,
+		RolesGuard
+	],
+	exports: [AuthService, JwtModule]
+})
+export class AuthModule {}
+</file>
+
+<file path="server-side/src/auth/auth.service.ts">
+import {
+	BadRequestException,
+	Injectable,
+	NotFoundException,
+	UnauthorizedException
+} from '@nestjs/common'
+import { JwtService } from '@nestjs/jwt'
+import { UserService } from '../user/user.service'
+import { PrismaService } from '../prisma.service'
+import { AuthDto } from './dto/auth.dto'
+import { ConfigService } from '@nestjs/config/dist/config.service'
+import { Response } from 'express'
+
+@Injectable()
+export class AuthService {
+	EXPIRE_DAY_REFRESH_TOKEN = 1
+	REFRESH_TOKEN_NAME = 'refreshToken'
+
+	constructor(
+		private jwt: JwtService,
+		private userService: UserService,
+		private prisma: PrismaService,
+		private configService: ConfigService
+	) {}
+
+	async login(dto: AuthDto) {
+		const user = await this.validateUser(dto)
+
+		const tokens = this.issueToken(user.id)
+
+		return { user, ...tokens }
+	}
+
+	async register(dto: AuthDto) {
+		const oldUser = await this.userService.getByEmail(dto.email)
+
+		if (oldUser) {
+			throw new BadRequestException(
+				'Пользователь с такой почтой уже существует'
+			)
+		}
+		const user = await this.userService.create(dto)
+
+		const tokens = this.issueToken(user.id)
+
+		return { user, ...tokens }
+	}
+
+	async getNewTokens(refreshToken: string) {
+		const result = await this.jwt.verifyAsync<{ id: string }>(refreshToken)
+
+		if (!result) throw new UnauthorizedException('Невалидный токен')
+
+		const user = await this.userService.getById(result.id)
+		if (!user) {
+			throw new UnauthorizedException('Пользователь не найден')
+		}
+
+		const tokens = this.issueToken(user.id)
+
+		return { user, ...tokens }
+	}
+
+	issueToken(userId: string) {
+		const data = { id: userId }
+
+		const accessToken = this.jwt.sign(data, {
+			expiresIn: '1h'
+		})
+		const refreshToken = this.jwt.sign(data, {
+			expiresIn: '7d'
+		})
+		return { accessToken, refreshToken }
+	}
+
+	private async validateUser(dto: AuthDto) {
+		const user = await this.userService.getByEmail(dto.email)
+		if (!user) throw new NotFoundException('Пользователь не найден')
+		return user
+	}
+
+	async validateOAuthUser(req: {
+		user: { email?: string; name?: string; picture?: string }
+	}) {
+		if (!req.user?.email) {
+			throw new UnauthorizedException(
+				'Email не получен от OAuth провайдера'
+			)
+		}
+		let user = await this.userService.getByEmail(req.user.email)
+
+		if (!user) {
+			user = await this.prisma.user.create({
+				data: {
+					email: req.user.email,
+					name: req.user.name,
+					picture: req.user.picture
+				},
+				include: {
+					orders: true
+				}
+			})
+		}
+		const tokens = this.issueToken(user.id)
+
+		return { user, ...tokens }
+	}
+
+	addRefreshTokenToResponse(res: Response, refreshToken: string) {
+		const expiresIn = new Date()
+		expiresIn.setDate(expiresIn.getDate() + this.EXPIRE_DAY_REFRESH_TOKEN)
+
+		res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
+			httpOnly: true,
+			domain: this.configService.getOrThrow<string>('SERVER_DOMAIN'),
+			expires: expiresIn,
+			secure: true,
+			sameSite: 'none'
+		})
+	}
+	removeRefreshTokenFromResponse(res: Response) {
+		res.cookie(this.REFRESH_TOKEN_NAME, '', {
+			httpOnly: true,
+			domain: this.configService.getOrThrow<string>('SERVER_DOMAIN'),
+			expires: new Date(0),
+			secure: true,
+			sameSite: 'none'
+		})
+	}
+}
+</file>
+
+<file path="server-side/src/category/dto/category.dto.ts">
+import { IsString, IsNotEmpty, MaxLength } from 'class-validator'
+
+export class CategoryDto {
+    @IsString({ message: 'Название должно быть строкой' })
+    @IsNotEmpty({ message: 'Название не может быть пустым' })
+    @MaxLength(100, { message: 'Название не может превышать 100 символов' })
+    title: string
+
+    @IsString({ message: 'Описание должно быть строкой' })
+    @IsNotEmpty({ message: 'Описание не может быть пустым' })
+    @MaxLength(2000, { message: 'Описание не может превышать 2000 символов' })
+    description: string
+}
+</file>
+
+<file path="server-side/src/category/category.controller.ts">
+import { Controller, Get, Param, ValidationPipe, UseGuards } from '@nestjs/common'
+import { CategoryService } from './category.service'
+import { Auth } from 'src/auth/decorators/auth.decorator'
+import { Body, Delete, HttpCode, Put, UsePipes } from '@nestjs/common'
+import { CategoryDto } from './dto/category.dto'
+import { Roles } from '../auth/decorators/roles.decorator'
+import { RolesGuard } from '../auth/guards/roles.guard'
+import { CurrentUser } from 'src/user/decorators/user.decorator'
+
+@Controller('categories')
+export class CategoryController {
+	constructor(private readonly categoryService: CategoryService) {}
+
+	@Auth()
+	@Get('by-id/:id')
+	async getById(@Param('id') id: string) {
+		return this.categoryService.getById(id)
+	}
+
+	@UseGuards(RolesGuard)
+    @Roles('ADMIN')
+	@UsePipes(new ValidationPipe())
+	@HttpCode(200)
+	@Auth()
+	@Put(':id')
+	async update(
+        @Param('id') id: string, 
+        @Body() dto: CategoryDto,
+        @CurrentUser('role') userRole: string // Извлекаем роль
+    ) {
+        return this.categoryService.update(id, dto, userRole) // Передаем её
+    }
+
+	@UseGuards(RolesGuard)
+    @Roles('ADMIN')
+	@HttpCode(200)
+	@Auth()
+	@Delete(':id')
+	async delete(
+        @Param('id') id: string,
+        @CurrentUser('role') userRole: string // Извлекаем роль
+    ) {
+        return this.categoryService.delete(id, userRole) // Передаем её
+    }
+}
+</file>
+
+<file path="server-side/src/category/category.module.ts">
+import { Module } from '@nestjs/common'
+import { CategoryService } from './category.service'
+import { CategoryController } from './category.controller'
+import { PrismaService } from 'src/prisma.service'
+
+@Module({
+	controllers: [CategoryController],
+	providers: [CategoryService, PrismaService]
+})
+export class CategoryModule {}
+</file>
+
+<file path="server-side/src/category/category.service.ts">
+import { Injectable, ForbiddenException, NotFoundException } from '@nestjs/common'
+import { PrismaService } from 'src/prisma.service'
+import { CategoryDto } from './dto/category.dto'
+
+@Injectable()
+export class CategoryService {
+	constructor(private prisma: PrismaService) {}
+
+	async getById(id: string) {
+		const category = await this.prisma.category.findFirst({
+			where: {
+				id
+			}
+		})
+
+		if (!category) throw new NotFoundException('Категория не найдена')
+
+		return category
+	}
+
+	async create(dto: CategoryDto, userRole: string) {
+        if (userRole !== 'ADMIN') throw new ForbiddenException('Нет прав на создание')
+        
+        return this.prisma.category.create({
+            data: {
+                title: dto.title,
+                description: dto.description
+            }
+        })
+    }
+
+	async update(id: string, dto: CategoryDto, userRole: string) {
+        if (userRole !== 'ADMIN') throw new ForbiddenException('Нет прав на изменение')
+        
+        await this.getById(id)
+
+        return this.prisma.category.update({
+            where: { id },
+            data: dto
+        })
+    }
+
+	async delete(id: string, userRole: string) {
+        if (userRole !== 'ADMIN') throw new ForbiddenException('Нет прав на удаление')
+        
+        await this.getById(id)
+
+        return this.prisma.category.delete({
+            where: { id }
+        })
+    }
+}
+</file>
+
+<file path="server-side/src/config/jwt.config.ts">
+import { ConfigService } from '@nestjs/config'
+import { JwtModuleOptions } from '@nestjs/jwt'
+
+export const getJwtConfig = (
+	configService: ConfigService
+): JwtModuleOptions => ({
+	secret: configService.get<string>('JWT_SECRET')
+})
+</file>
+
+<file path="server-side/src/file/file.controller.ts">
+import {
+    Controller,
+    HttpCode,
+    Post,
+    Query,
+    UseInterceptors,
+    UploadedFiles,
+    BadRequestException
+} from '@nestjs/common'
+import { FileService } from './file.service'
+import { FilesInterceptor } from '@nestjs/platform-express'
+import { Auth } from 'src/auth/decorators/auth.decorator'
+
+@Controller('files')
+export class FileController {
+    constructor(private readonly fileService: FileService) {}
+
+    @HttpCode(200)
+    // Разрешаем загрузку до 10 файлов за раз
+    @UseInterceptors(FilesInterceptor('files', 10)) 
+    @Auth()
+    @Post()
+    async saveFile(
+        @UploadedFiles() files: Express.Multer.File[],
+        @Query('folder') folder?: string
+    ) {
+        if (!files || files.length === 0) {
+            throw new BadRequestException('Файлы не загружены')
+        }
+
+		const allowedMimeTypes = ['image/jpeg', 'image/png', 'image/webp'];
+    		for (const file of files) {
+        		if (!allowedMimeTypes.includes(file.mimetype)) {
+            		throw new BadRequestException(`Тип файла ${file.mimetype} не поддерживается`);
+        		}
+    		}
+        // Жесткая проверка: разрешаем только 'products' или 'avatars', чтобы нельзя было задать путь вручную
+        const allowedFolders = ['products', 'avatars'];
+		const targetFolder = folder && allowedFolders.includes(folder) ? folder : 'products';
+
+        return this.fileService.saveFile(files, targetFolder)
+    }
+}
+</file>
+
+<file path="server-side/src/file/file.interface.ts">
+export interface FileResponse {
+	url: string
+	name: string
+}
+</file>
+
+<file path="server-side/src/file/file.module.ts">
+import { Module } from '@nestjs/common'
+import { FileService } from './file.service'
+import { FileController } from './file.controller'
+import { ServeStaticModule } from '@nestjs/serve-static'
+import { path } from 'app-root-path'
+
+@Module({
+	imports: [
+		ServeStaticModule.forRoot({
+    		rootPath: `${path}/uploads`,
+    		serveRoot: '/uploads',
+    		serveStaticOptions: {
+        		index: false, // Запрещает отдавать индексные файлы
+        		dotfiles: 'deny', // Запрещает отдавать скрытые файлы (типа .env или .git)
+    		}
+		})
+	],
+	controllers: [FileController],
+	providers: [FileService]
+})
+export class FileModule {}
+</file>
+
+<file path="server-side/src/file/file.service.ts">
+import { Injectable, BadRequestException } from '@nestjs/common'
+import { path } from 'app-root-path'
+import { ensureDir } from 'fs-extra'
+import { FileResponse } from './file.interface'
+import { writeFile } from 'fs/promises'
+import * as pathModule from 'path'
+import * as crypto from 'crypto'
+
+@Injectable()
+export class FileService {
+    private ALLOWED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp']
+
+    async saveFile(files: Express.Multer.File[], folder: string = 'products'): Promise<FileResponse[]> {
+        const uploadedFolder = `${path}/uploads/${folder}`
+        await ensureDir(uploadedFolder)
+
+        return await Promise.all(
+        	files.map(async (file) => {
+                // Доверие только MIME-типу, а не расширению из имени файла
+                const ext = this.getExtFromMime(file.mimetype);
+				if (!this.ALLOWED_EXTENSIONS.includes(ext)) {
+    				throw new BadRequestException('Недопустимый формат файла');
+				}
+                
+                // Генерируем уникальное имя через UUID
+                const fileName = `${crypto.randomUUID()}${ext}`;
+
+                await writeFile(
+                    `${uploadedFolder}/${fileName}`,
+                    file.buffer
+                );
+
+                return {
+                    url: `/uploads/${folder}/${fileName}`,
+                    name: fileName
+                };
+            })
+        );
+    }
+        private getExtFromMime(mimetype: string): string {
+        const map: Record<string, string> = {
+            'image/jpeg': '.jpg',
+            'image/png': '.png',
+            'image/webp': '.webp'
+        };
+        return map[mimetype] || '.jpg';
+    }
+}
+</file>
+
+<file path="server-side/src/filters/all-exceptions.filter.ts">
+import { ExceptionFilter, Catch, ArgumentsHost, HttpException, HttpStatus } from '@nestjs/common';
+
+@Catch()
+export class AllExceptionsFilter implements ExceptionFilter {
+  catch(exception: unknown, host: ArgumentsHost) {
+    const ctx = host.switchToHttp();
+    const response = ctx.getResponse();
+
+    // Определяем статус ошибки
+    const status = exception instanceof HttpException 
+      ? exception.getStatus() 
+      : HttpStatus.INTERNAL_SERVER_ERROR;
+
+    // Скрываем детали стека от пользователя
+    const message = exception instanceof HttpException 
+      ? exception.getResponse() 
+      : 'Internal server error';
+
+    response.status(status).json({
+      statusCode: status,
+      message: typeof message === 'string' ? message : (message as any).message,
+      timestamp: new Date().toISOString(),
+    });
+  }
+}
+</file>
+
+<file path="server-side/src/order/dto/delivery-status.dto.ts">
+import { 
+  IsEnum, 
+  IsString, 
+  IsBoolean, 
+  IsObject, 
+  ValidateNested, 
+  IsDateString,   
+  MaxLength,       
+  IsNotEmpty,
+  IsDefined    
+} from 'class-validator'
+import { Type } from 'class-transformer'
+
+export enum DeliveryStatus {
+  PENDING = 'pending',          // Ожидание подтверждения
+  CONFIRMED = 'confirmed',      // Подтвержден
+  IN_PROGRESS = 'in_progress',  // В процессе (собираем букет / едем)
+  COMPLETED = 'completed',      // Доставлен / Забран
+  CANCELED = 'canceled'         // Отменен
+}
+
+export enum DeliveryType {
+  COURIER = 'courier',
+  PICKUP = 'pickup'
+}
+
+class AmountDelivery{
+    @IsString()
+    @IsNotEmpty()
+    value: string
+
+    @IsString()
+    @IsNotEmpty()
+    currency: string
+}
+
+export class AmountDeliveryDto {
+    @IsString()
+    @IsNotEmpty()
+    id: string;
+
+    @IsEnum(DeliveryStatus)
+    status: DeliveryStatus;
+
+}
+
+class DeliveryMethodDto {
+    @IsEnum(DeliveryType)
+    type: DeliveryType;
+
+    @IsString()
+    id: string;
+
+    @IsBoolean()
+    saved: boolean;
+
+    @IsString()
+    title: string;
+}
+
+export class ObjectDeliveryDto {
+    @IsString()
+    @IsNotEmpty()
+    id: string;
+
+    @IsEnum(DeliveryStatus)
+    status: DeliveryStatus;
+
+    @IsDefined()
+    @ValidateNested()
+    @Type(() => AmountDeliveryDto)
+    amount: AmountDeliveryDto
+
+    @IsDefined()
+    @ValidateNested()
+    @Type(() => DeliveryMethodDto)
+    delivery_method: DeliveryMethodDto
+
+    @IsDateString()
+    created_at: string
+
+    @IsDateString()
+    expires_at: string;
+
+    @IsString()
+    @MaxLength(1000)
+    description: string;
+}
+</file>
+
+<file path="server-side/src/order/dto/order.dto.ts">
+import {
+  IsArray,
+  IsDateString,
+  IsEnum,
+  IsNotEmpty,
+  IsNumber,
+  IsOptional,
+  IsString,
+  ValidateNested,
+  Min,
+  MaxLength
+} from 'class-validator'
+import { Type } from 'class-transformer'
+import { EnumOrderStatus } from '@prisma/client'
+import { EnumDeliveryType } from '@prisma/client'
+
+export class OrderDto {
+  @IsOptional()
+  @IsEnum(EnumOrderStatus, {
+    message: 'Статус заказа должен быть одним из: ' + Object.values(EnumOrderStatus).join(', ')
+  })
+  status: EnumOrderStatus
+
+  @IsString()
+  @IsNotEmpty()
+  @MaxLength(100)
+  customerName: string
+
+  @IsString()
+  @IsNotEmpty()
+  phone: string
+
+  @IsEnum(EnumDeliveryType, { message: 'Выберите корректный способ доставки (PICKUP или COURIER)' })
+  @IsNotEmpty()
+  deliveryType: EnumDeliveryType
+
+  @IsString()
+  @IsNotEmpty()
+  deliveryAddress: string
+
+  @IsDateString()
+  deliveryDate: string // Преобразуем в Date в сервисе
+
+  @IsOptional()
+  @IsString()
+  @MaxLength(500)
+  comment?: string
+
+  @IsArray({
+    message: "В заказе нет ни одного товара"
+  })
+  @ValidateNested({ each: true })
+  @Type(() => OrderItemDto)
+  items: OrderItemDto[]
+}
+
+export class OrderItemDto {
+  @IsNumber({}, { message: 'Количество должно быть числом' })
+  @Min(1, { message: 'Количество не может быть меньше 1' })
+  quantity: number
+
+  @IsString({ message: 'ID продукта должен быть строкой' })
+  @IsNotEmpty()
+  productId: string
+}
+</file>
+
+<file path="server-side/src/order/dto/update-order.dto.ts">
+import { IsOptional, IsEnum, IsArray,ValidateNested } from 'class-validator';
+import { Type } from 'class-transformer';
+import { EnumOrderStatus } from '@prisma/client'; 
+import { OrderItemDto } from './order.dto'
+
+export class UpdateOrderDto {
+    @IsOptional()
+    @IsEnum(EnumOrderStatus, {
+        message: 'Неверный статус заказа'
+    })
+    status?: EnumOrderStatus;
+
+    @IsOptional()
+    @IsArray()
+    @ValidateNested({ each: true }) 
+    @Type(() => OrderItemDto)       
+    items?: OrderItemDto[];
+}
+</file>
+
+<file path="server-side/src/order/dto/update-status.dto.ts">
+import { IsEnum, IsNotEmpty, IsString, IsOptional } from 'class-validator';
+import { EnumOrderStatus } from '@prisma/client';
+import { ApiProperty } from '@nestjs/swagger'; // Импортируем декоратор
+
+export class UpdateStatusDto {
+    @ApiProperty({ 
+        enum: EnumOrderStatus, 
+        description: 'Новый статус заказа',
+        example: EnumOrderStatus.CONFIRMED 
+    })
+    @IsEnum(EnumOrderStatus, { message: 'Неверный статус заказа' })
+    @IsNotEmpty()
+    status: EnumOrderStatus
+
+    @ApiProperty({ 
+        required: false, 
+        description: 'Ссылка на оплату (если нужно обновить вручную)',
+        example: 'https://yookassa.ru/...' 
+    })
+    @IsOptional()
+    @IsString()
+    paymentLink?: string
+}
+</file>
+
+<file path="server-side/src/order/order.controller.ts">
+import {
+    Body,
+    Controller,
+    Delete,
+    Get,
+    HttpCode,
+    Param,
+    Post,
+    Put,
+    Query,
+    UsePipes,
+    ValidationPipe,
+    UseGuards,
+    Patch
+} from '@nestjs/common'
+import { OrderService } from './order.service'
+import { Auth } from 'src/auth/decorators/auth.decorator'
+import { CurrentUser } from 'src/auth/decorators/user.decorator'
+import { OrderDto } from './dto/order.dto' // Твой DTO
+import { Roles } from '../auth/decorators/roles.decorator'
+import { RolesGuard } from '../auth/guards/roles.guard'
+import { AuthGuard } from '@nestjs/passport'
+import { UpdateOrderDto } from './dto/update-order.dto'
+import { UpdateStatusDto } from './dto/update-status.dto'
+import { EnumOrderStatus } from '@prisma/client'
+import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger'
+
+
+@ApiTags('Orders')
+@Controller('orders')
+export class OrderController {
+    constructor(private readonly orderService: OrderService) {}
+
+    @UseGuards(AuthGuard('jwt'), RolesGuard)
+    @Roles('ADMIN', 'WORKER')
+    @Get()
+    async getAll(@CurrentUser() user: { id: string; role: string }, @Query('searchTerm') searchTerm?: string) {
+        return this.orderService.getAll(user, searchTerm);
+    }
+
+    @UseGuards(AuthGuard('jwt'))
+    @Get('by-id/:id')
+    async getById(@Param('id') id: string, @CurrentUser() user: { id: string; role: string }) {
+        return this.orderService.getById(id, user);
+    }
+
+    @Get('by-user')
+    @Auth()
+    async getByUserId(@CurrentUser() user: { id: string; role: string }) {
+        return this.orderService.getByUserId(user.id, user);
+    }
+
+    @UseGuards(AuthGuard('jwt'))
+    @UsePipes(new ValidationPipe())
+    @HttpCode(200)
+    @Post()
+    async create(@Body() dto: OrderDto, @CurrentUser('id') userId: string) {
+        return this.orderService.create(dto, userId);
+    }
+
+    @UseGuards(AuthGuard('jwt'))
+    @Put(':id')
+    async update(
+        @Param('id') id: string, 
+        @Body() dto: UpdateOrderDto,
+        @CurrentUser() user: { id: string; role: string }
+    ) {
+        return this.orderService.updateOrder(id, user, dto);
+    }
+
+
+    @UseGuards(AuthGuard('jwt'), RolesGuard)
+    @Roles('ADMIN', 'WORKER')
+    @Patch(':id/set-payment-details')
+    async setDetails(
+        @Param('id') id: string,
+        @Body('shippingPrice') shippingPrice: number 
+    ) {
+        return this.orderService.setPaymentDetails(id, shippingPrice);
+    }
+
+    @UseGuards(AuthGuard('jwt'))
+    @HttpCode(200)
+    @Auth()
+    @Delete(':id')
+    async delete(@Param('id') id: string, @CurrentUser() user: { id: string; role: string }) {
+        return this.orderService.delete(id, user);
+    }
+
+    @UseGuards(AuthGuard('jwt'), RolesGuard)
+    @Roles('ADMIN', 'WORKER')
+    @Patch(':id/status')
+    async updateStatus(
+        @Param('id') id: string, 
+        @Body('status') status: EnumOrderStatus
+    ) {
+        return this.orderService.updateStatus(id, status);
+    }
+
+
+    @Post('webhook/yookassa')
+    async yookassaWebhook(@Body() body: any) {
+        return this.orderService.handleWebhook(body);
+    }
+}
+</file>
+
+<file path="server-side/src/order/order.module.ts">
+import { Module } from '@nestjs/common'
+import { OrderService } from './order.service'
+import { OrderController } from './order.controller'
+import { PrismaService } from 'src/prisma.service'
+import { TelegramService } from 'src/telegram/telegram.service'
+
+@Module({
+	controllers: [OrderController],
+	providers: [OrderService, PrismaService, TelegramService]
+})
+export class OrderModule {}
+</file>
+
+<file path="server-side/src/order/order.service.ts">
+// src/order/order.service.ts
+import { Injectable, ForbiddenException, NotFoundException, BadRequestException } from '@nestjs/common'
+import { PrismaService } from 'src/prisma.service'
+import { OrderDto } from './dto/order.dto'
+import { UpdateOrderDto } from './dto/update-order.dto'
+import { Prisma } from '@prisma/client'
+import { EnumOrderStatus } from '@prisma/client'
+import { EnumDeliveryType } from '@prisma/client'
+import { YooCheckout, ICreatePayment } from '@a2seven/yoo-checkout'
+import { v4 as uuidv4 } from 'uuid'
+import { TelegramService } from 'src/telegram/telegram.service'
+
+@Injectable()
+export class OrderService {
+    private checkout: YooCheckout;
+
+    constructor(private prisma: PrismaService, private readonly telegramService: TelegramService) {
+        // Инициализируем через новый пакет
+        this.checkout = new YooCheckout({
+            shopId: process.env.YOOKASSA_SHOP_ID || '',
+            secretKey: process.env.YOOKASSA_SECRET_KEY || ''
+        });
+    }
+
+    async setPaymentDetails(orderId: string, shippingPrice: number) {
+        const order = await this.prisma.order.findUnique({
+            where: { id: orderId },
+            include: { items: true }
+        });
+
+        if (!order) throw new NotFoundException('Заказ не найден');
+
+        const subTotal = order.items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+        const finalShipping = order.deliveryType === EnumDeliveryType.PICKUP ? 0 : shippingPrice;
+        const finalTotal = subTotal + finalShipping;
+
+        try {
+            // Структура запроса в этом пакете чуть-чуть отличается
+            const createPayload: ICreatePayment = {
+                amount: {
+                    value: finalTotal.toFixed(2),
+                    currency: 'RUB'
+                },
+                confirmation: {
+                    type: 'redirect',
+                    return_url: 'https://google.com'
+                },
+                capture: true,
+                description: `Оплата заказа №${order.id}`,
+                metadata: { orderId: order.id }
+            };
+
+            // Вызываем через this.checkout
+            const payment = await this.checkout.createPayment(createPayload, uuidv4());
+
+            return this.prisma.order.update({
+                where: { id: orderId },
+                data: {
+                    paymentLink: payment.confirmation.confirmation_url,
+                    shippingPrice: finalShipping,
+                    total: finalTotal,
+                    status: EnumOrderStatus.AWAITING_PAYMENT
+                }
+            });
+        } catch (error) {
+            console.error('YooCheckout Error:', error);
+            throw new BadRequestException('Ошибка платежной системы: ' + error.message);
+        }
+    }
+
+    async handleWebhook(data: any) {
+        if (data.event === 'payment.succeeded') {
+            const orderId = data.object.metadata?.orderId;
+            if (!orderId) return { status: 'error' };
+
+            // 1. Обновляем статус на Оплачено (CONFIRMED)
+            const updatedOrder = await this.prisma.order.update({
+                where: { id: orderId },
+                data: { status: EnumOrderStatus.CONFIRMED },
+                include: { items: { include: { product: true } } }
+            });
+
+            // 2. Получаем всех воркеров с telegramId, чтобы обновить им списки
+            const workers = await this.prisma.user.findMany({
+                where: { 
+                    telegramId: { not: null },
+                    role: { in: ['ADMIN', 'WORKER'] }
+                }
+            });
+
+            // 3. Рассылаем уведомление об оплате и обновляем их основной список
+            for (const worker of workers) {
+                if (worker.telegramId) {
+                    // Опционально: короткое уведомление, что заказ оплачен
+                    await this.telegramService.sendNewOrderAlert({
+                        ...updatedOrder,
+                        customMessage: `💰 Заказ #${orderId.slice(-6)} успешно оплачен!` 
+                    });
+                    // Список обновится автоматически внутри sendNewOrderAlert или вызови отдельно:
+                    // await this.telegramService.sendOrdersList(worker.telegramId);
+                }
+            }
+            
+            return { status: 'ok' };
+        }
+        return { status: 'ok' };
+    }
+
+    async getAll(user: { id: string, role: string }, searchTerm?: string) {
+        const whereClause: Prisma.OrderWhereInput = searchTerm 
+            ? { customerName: { contains: searchTerm, mode: 'insensitive' } }: {}
+
+        if (user.role === 'ADMIN') 
+            return this.prisma.order.findMany({ 
+                where: whereClause,
+                include: { items: { include: { product: true } } } // Добавлено
+            })
+        const filter = user.role === 'USER' ? { userId: user.id } : {}
+        
+        return this.prisma.order.findMany({ 
+            where: { ...whereClause, ...filter },
+            include: { items: { include: { product: true } } } // Добавлено
+        });
+    }
+
+    async getById(id: string, user: { id: string, role: string }) {
+        const order = await this.prisma.order.findFirst({ 
+            where: { 
+                id,
+                ... (user.role === 'USER' ? { userId: user.id } : {}) 
+            },
+            include: { items: { include: { product: true } } }
+        })
+        if (!order) throw new NotFoundException('Заказ не найден или доступ запрещен')
+        return order
+    }
+
+    async getByUserId(targetUserId: string, currentUser: { id: string, role: string }) {
+        if (currentUser.role !== 'ADMIN' && currentUser.id !== targetUserId) {
+            throw new ForbiddenException('Вы не имеете доступа к чужим заказам')
+        }
+
+        return this.prisma.order.findMany({ 
+            where: { userId: targetUserId },
+            include: { items: { include: { product: true } } },
+            orderBy: { createdAt: 'desc' }
+        })
+    }
+
+    async create(dto: OrderDto, userId: string) {
+        const productIds = dto.items.map(item => item.productId);
+        const products = await this.prisma.product.findMany({
+            where: { id: { in: productIds } }
+        });
+
+        let total = 0;
+        const itemsData = dto.items.map(item => {
+            const product = products.find(p => p.id === item.productId);
+            if (!product) throw new NotFoundException(`Товар ${item.productId} не найден`);
+            
+            total += product.price * item.quantity;
+            return { 
+                quantity: item.quantity, 
+                price: product.price, 
+                productId: item.productId 
+            };
+        });
+
+        const order = await this.prisma.order.create({
+            data: {
+                total,
+                customerName: dto.customerName,
+                phone: dto.phone,
+                deliveryType: dto.deliveryType,
+                deliveryAddress: dto.deliveryAddress,
+                deliveryDate: new Date(dto.deliveryDate),
+                comment: dto.comment,
+                status: EnumOrderStatus.PENDING,
+                userId: userId,
+                items: { create: itemsData }
+            },
+            include: { items: { include: { product: true } } }
+        });
+
+        // Вызываем метод алертов, который мы написали в TelegramService
+        // Он отправит уведомление и сразу подгрузит обновленный список
+        await this.telegramService.sendNewOrderAlert(order);
+
+        return order;
+    }
+    async updateOrder(orderId: string, user: { id: string, role: string }, dto: UpdateOrderDto) {
+    const order = await this.getById(orderId, user)
+    if (!order) throw new NotFoundException('Заказ не найден')
+
+    if (user.role !== 'ADMIN' && order.status !== 'PENDING') {
+            throw new ForbiddenException('Заказ можно менять только в статусе ожидания');
+    }
+    
+    const { items, ...orderData } = dto;
+    const itemsData = items ? await this.mapItemsWithPrice(items) : undefined;
+    const total = itemsData ? itemsData.reduce((sum, item) => sum + (item.price * item.quantity), 0) : undefined;
+    return this.prisma.order.update({
+        where: { id: orderId },
+        data: {
+            ...orderData,
+            total,
+            items: itemsData ? {
+                deleteMany: {}, // Удаляем старые
+                create: itemsData
+                } : undefined
+            }
+        })
+    }
+
+    async delete(id: string, user: { id: string, role: string }) {
+        const order = await this.getById(id, user);
+
+        if (user.role !== 'ADMIN') {
+            // Приводим тип к строке, чтобы сравнение в массиве работало без ошибок TS
+            const currentStatus = order.status as string;
+            
+            if (!['PENDING', 'AWAITING_PAYMENT'].includes(currentStatus)) {
+                throw new ForbiddenException(
+                    'Удалить можно только заказ, который еще не начали собирать'
+                );
+            }
+        }
+        
+        return this.prisma.order.delete({ where: { id: order.id } });
+    }
+
+    async updateStatus(orderId: string, status: string, paymentLink?: string) {
+    return this.prisma.order.update({
+        where: { id: orderId },
+        data: {
+            status: status as EnumOrderStatus,
+            paymentLink: paymentLink || undefined
+            }
+        })
+    }
+
+    private async mapItemsWithPrice(items: { productId: string; quantity: number }[]) {
+        const productIds = items.map(item => item.productId);
+        const products = await this.prisma.product.findMany({
+            where: { id: { in: productIds } }
+        });
+
+        return items.map(item => {
+            const product = products.find(p => p.id === item.productId);
+            if (!product) throw new NotFoundException(`Товар ${item.productId} не найден`);
+        
+            return {
+                quantity: item.quantity,
+                price: product.price, // Берем актуальную цену
+                productId: item.productId
+            };
+        });
+    }
+}
+</file>
+
+<file path="server-side/src/product/dto/product.dto.ts">
+import { 
+    ArrayMinSize, 
+    IsNotEmpty, 
+    IsNumber, 
+    IsString, 
+    Min, 
+    MaxLength, 
+    ArrayNotEmpty 
+} from "class-validator"
+
+export class ProductDto {
+    @IsString()
+    @IsNotEmpty({ message: 'Название не может быть пустым' })
+    @MaxLength(100, { message: 'Название слишком длинное' }) // Защита от DoS
+    title: string
+
+    @IsString()
+    @IsNotEmpty({ message: 'Описание не может быть пустым' })
+    @MaxLength(2000, { message: 'Описание не может превышать 2000 символов' })
+    description: string
+
+    @IsNumber({}, { message: 'Цена должна быть числом' })
+    @IsNotEmpty({message: 'Цена не может быть пустой'})
+    @Min(0, { message: 'Цена не может быть отрицательной' })
+    price: number
+
+    @IsString({message: 'Укажите хотябы одну картинку', each: true})
+    @ArrayMinSize(1, { message: 'Укажите хотябы одну картинку'})
+    @IsNotEmpty({ each: true})
+    images: string[]
+
+    @IsString({
+        message: 'Категория обязательна'
+    })
+    @IsNotEmpty({
+        message: 'Категория не может быть пустой'
+    })
+    categoryId: string
+}
+</file>
+
+<file path="server-side/src/product/product.controller.ts">
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  HttpCode,
+  Param,
+  Post,
+  Put,
+  Query,
+  UsePipes,
+  ValidationPipe,
+  UseGuards
+} from '@nestjs/common'
+import { ProductService } from './product.service'
+import { ProductDto } from './dto/product.dto'
+import { Roles } from '../auth/decorators/roles.decorator'
+import { RolesGuard } from '../auth/guards/roles.guard'
+import { AuthGuard } from '@nestjs/passport'
+import { CurrentUser } from 'src/user/decorators/user.decorator'
+
+@Controller('products')
+export class ProductController {
+	constructor(private readonly productService: ProductService) {}
+
+	@Get()
+	async getAll(@Query('searchTerm') searchTerm?: string) {
+		return this.productService.getAll(searchTerm)
+
+	}
+	@Get('by-id/:id')
+	async getById(@Param('id') id: string) {
+		return this.productService.getById(id)
+	}
+	
+	@Get('by-category/:categoryId')
+	async getByCategory(@Param('categoryId') categoryId: string) {
+		return this.productService.getByCategory(categoryId)
+	}
+
+	@Get('most-popular')
+	async getMostPopular() {
+		return this.productService.getMostPopular()
+	}
+
+	@UseGuards(AuthGuard('jwt'), RolesGuard)
+    @Roles('ADMIN')
+	@UsePipes(new ValidationPipe())
+	@HttpCode(200)
+	@Post()
+	async create(
+        @Body() dto: ProductDto,
+        @CurrentUser('role') userRole: string // Извлекаем роль из токена
+    ) {
+        return this.productService.create(dto, userRole); // Передаем её в сервис
+    }
+
+	@UseGuards(AuthGuard('jwt'), RolesGuard)
+    @Roles('ADMIN')
+	@UsePipes(new ValidationPipe())
+	@HttpCode(200)
+	@Put(':id')
+	async update(
+        @Param('id') id: string, 
+        @Body() dto: ProductDto,
+        @CurrentUser('role') userRole: string // Извлекаем роль
+    ) {
+        return this.productService.update(id, dto, userRole); // Передаем
+    }
+
+	@UseGuards(AuthGuard('jwt'), RolesGuard)
+    @Roles('ADMIN')
+	@HttpCode(200)
+	@Delete(':id')
+	async delete(
+        @Param('id') id: string,
+        @CurrentUser('role') userRole: string // Извлекаем роль
+    ) {
+        return this.productService.delete(id, userRole); // Передаем
+    }
+}
+</file>
+
+<file path="server-side/src/product/product.module.ts">
+import { Module } from '@nestjs/common'
+import { ProductService } from './product.service'
+import { ProductController } from './product.controller'
+import { PrismaService } from 'src/prisma.service'
+
+@Module({
+	controllers: [ProductController],
+	providers: [ProductService, PrismaService]
+})
+export class ProductModule {}
+</file>
+
+<file path="server-side/src/product/product.service.ts">
+import { Injectable, NotFoundException, ForbiddenException } from '@nestjs/common'
+import { EnumOrderStatus } from '@prisma/client'
+import { PrismaService } from 'src/prisma.service'
+import { ProductDto } from './dto/product.dto'
+
+
+
+
+@Injectable()
+export class ProductService {
+
+    constructor(private prisma: PrismaService) {}
+
+    async getAll(userRole?: string, searchTerm?: string) {
+        const whereClause: any = searchTerm ? {
+            OR: [
+                { title: { contains: searchTerm, mode: 'insensitive' } },
+                { description: { contains: searchTerm, mode: 'insensitive' } }
+            ]
+        } : {};
+
+        // Если это не админ, можно добавить логику: например, не показывать товары с price: 0 (черновики)
+        if (userRole !== 'ADMIN') {
+            whereClause.price = { gt: 0 }; 
+        }
+
+        return this.prisma.product.findMany({
+            where: whereClause,
+            include: { category: true },
+            orderBy: { createdAt: 'desc' }
+        });
+    }
+
+    private async getSearchTermFilter(searchTerm: string) {
+    return this.prisma.product.findMany({
+        where: {
+            OR: [
+                { title: { contains: searchTerm, mode: 'insensitive' } },
+                { description: { contains: searchTerm, mode: 'insensitive' } }
+            ]
+        },
+        include: {
+            category: true
+            }
+        })
+    }
+
+	async getById(id: string) {
+        const product = await this.prisma.product.findUnique({
+            where: { id },
+            include: { category: true }
+        });
+        if (!product) throw new NotFoundException('Товар не найден');
+        return product;
+        }
+    
+
+    async getByCategory(categoryId: string) {
+		const products = await this.prisma.product.findMany({
+			where: {
+				category: {
+                    id: categoryId
+                }
+			},
+            include: {
+                category: true
+            }
+		})
+    
+
+		if (products.length === 0) {
+            throw new NotFoundException('Товары не найдены')
+        }
+
+		return products
+	}
+
+    async getMostPopular() {
+        const mostPopularProducts = await this.prisma.orderItem.groupBy({
+            by: ['productId'],
+            where: {
+                order: {
+                    is:{
+                        status: EnumOrderStatus.COMPLETED
+                    }   
+                }
+            },
+
+            _sum: {
+                quantity: true
+            },
+            orderBy: {
+                _sum: {
+                    quantity: 'desc'
+                }
+            },
+        })
+
+        const productIds = mostPopularProducts.map(item => item.productId)
+
+        const products = await this.prisma.product.findMany({
+            where: {
+                id: {
+                    in: productIds
+                }
+            },
+            include: {
+                category: true
+            }
+        })
+
+        return products
+
+
+    }
+
+    async create( dto: ProductDto, userRole: string) {
+        if (userRole !== 'ADMIN') throw new ForbiddenException('Только админ может создавать товары');
+	    return this.prisma.product.create({
+		    data: {
+                title: dto.title,
+                description: dto.description,
+                price: dto.price,
+                images: dto.images,
+                categoryId: dto.categoryId
+		    }
+	    })
+	}
+
+	async update(id: string, dto: ProductDto, userRole: string) {
+        // Проверяем права на уровне сервиса, если не используем Guards
+        if (userRole !== 'ADMIN') throw new ForbiddenException('Только админ может менять товары')
+        
+        await this.getById(id);
+        return this.prisma.product.update({ where: { id }, data: dto });
+    }
+
+	async delete(id: string, userRole: string) {
+        if (userRole !== 'ADMIN') throw new ForbiddenException('Только админ может удалять товары')
+		await this.getById(id)
+
+		return this.prisma.product.delete({
+			where: {
+				id
+			}
+		})
+	}
+}
+</file>
+
+<file path="server-side/src/telegram/telegram.service.ts">
+import { Injectable, OnModuleInit, Inject, forwardRef } from '@nestjs/common';
+import { Telegraf, Markup } from 'telegraf';
+import { PrismaService } from 'src/prisma.service';
+import { OrderService } from 'src/order/order.service';
+import * as argon2 from 'argon2';
+import { EnumOrderStatus } from '@prisma/client';
+
+@Injectable()
+export class TelegramService implements OnModuleInit {
+    private bot: Telegraf;
+
+    constructor(
+        private prisma: PrismaService,
+        @Inject(forwardRef(() => OrderService))
+        private orderService: OrderService,
+    ) {
+        const token = process.env.TELEGRAM_BOT_TOKEN;
+        if (!token) throw new Error('TELEGRAM_BOT_TOKEN is missing in .env');
+        this.bot = new Telegraf(token);
+    }
+
+    onModuleInit() {
+        this.setupCommands();
+        this.setupActions();
+        this.setupTextHandler();
+        
+        this.bot.launch().catch(err => console.error('Telegram Bot Launch Error:', err));
+        console.log('🚀 Telegram Bot initialized and ready');
+    }
+
+    private setupCommands() {
+        this.bot.start(async (ctx) => {
+            const tgId = ctx.from.id.toString();
+            const user = await this.prisma.user.findFirst({ where: { telegramId: tgId } });
+
+            if (user) {
+                await ctx.reply(`✅ Вы авторизованы как ${user.email}`);
+                return this.sendMainMenu(tgId);
+            }
+
+            await ctx.reply(
+                '👋 <b>Добро пожаловать в GreenArt!</b>\n\n' +
+                'Для работы с заказами пришлите ваш <b>Email</b> и <b>Пароль</b> через пробел.',
+                { parse_mode: 'HTML' }
+            );
+        });
+
+        this.bot.command('orders', async (ctx) => {
+            await this.sendOrdersList(ctx.from.id.toString());
+        });
+
+        this.bot.command('history', async (ctx) => {
+            await this.sendOrderHistory(ctx.from.id.toString(), 0);
+        });
+    }
+
+    private setupTextHandler() {
+        this.bot.on('text', async (ctx, next) => {
+            const text = ctx.message.text;
+            const tgId = ctx.from.id.toString();
+            const message = ctx.message;
+
+            const user = await this.prisma.user.findFirst({ where: { telegramId: tgId } });
+
+            // Обработка ввода стоимости доставки
+            if (user && 'reply_to_message' in message && message.reply_to_message && 'text' in message.reply_to_message) {
+                if (message.reply_to_message.text.includes('Введите стоимость доставки')) {
+                    const deliveryPrice = parseInt(text);
+                    if (isNaN(deliveryPrice)) return ctx.reply('❌ Пожалуйста, введите число (например, 500)');
+
+                    const orderIdMatch = message.reply_to_message.text.match(/#([a-z0-9]+)/i);
+                    if (orderIdMatch) {
+                        const shortId = orderIdMatch[1];
+                        const order = await this.prisma.order.findFirst({
+                            where: { id: { endsWith: shortId } }
+                        });
+
+                        if (order) {
+                            await this.orderService.setPaymentDetails(order.id, deliveryPrice);
+                            await ctx.reply(`✅ Для заказа #${shortId} установлена доставка ${deliveryPrice}₽.`);
+                            return this.sendOrdersList(tgId);
+                        }
+                    }
+                    return ctx.reply('❌ Заказ не найден.');
+                }
+            }
+
+            // Авторизация
+            if (!user) {
+                const parts = text.split(/\s+/);
+                if (parts.length < 2) return ctx.reply('⚠️ Пришлите: email пароль');
+
+                const email = parts[0].trim().toLowerCase();
+                const password = parts[1].trim();
+
+                const dbUser = await this.prisma.user.findUnique({ where: { email } });
+                if (!dbUser || !['ADMIN', 'WORKER'].includes(dbUser.role)) return ctx.reply('❌ Доступ запрещен.');
+
+                const isValid = await argon2.verify(dbUser.password!, password);
+                if (!isValid) return ctx.reply('❌ Неверный пароль.');
+
+                await this.prisma.user.update({ where: { id: dbUser.id }, data: { telegramId: tgId } });
+                await ctx.reply('🎉 Вход выполнен!');
+                return this.sendMainMenu(tgId);
+            }
+
+            if (text === '/logout') return this.logout(ctx, user.id);
+            if (text === '/orders') return this.sendOrdersList(user.telegramId!);
+            
+            return next();
+        });
+    }
+
+    private setupActions() {
+        this.bot.action('main_menu', async (ctx) => {
+            await ctx.answerCbQuery();
+            await this.sendMainMenu(ctx.from.id.toString());
+        });
+
+        this.bot.action(/manage_(.+)/, async (ctx) => {
+            const orderId = ctx.match[1];
+            const order = await this.prisma.order.findUnique({ 
+                where: { id: orderId },
+                include: { items: { include: { product: true } } }
+            });
+            if (!order) return ctx.answerCbQuery('Заказ не найден');
+
+            const itemsList = order.items.map(i => i.product.title).join(', ');
+
+            await ctx.editMessageText(
+                `⚙️ <b>Управление заказом #${order.id.slice(-6)}</b>\n` +
+                `Состав: ${itemsList}\n` +
+                `Сумма: ${order.total}₽\n\n` +
+                `Выберите действие:`,
+                {
+                    parse_mode: 'HTML',
+                    ...Markup.inlineKeyboard([
+                        [Markup.button.callback('🚚 Ссылка на оплату (+Доставка)', `ask_delivery_${orderId}`)],
+                        [Markup.button.callback('📦 В сборку (Самовывоз)', `set_status_${orderId}_${EnumOrderStatus.IN_PROGRESS}`)],
+                        [Markup.button.callback('🚫 Отменить заказ', `confirm_cancel_${orderId}`)],
+                        [Markup.button.callback('⬅️ Назад', 'refresh_list')]
+                    ])
+                }
+            );
+        });
+
+        this.bot.action(/ask_delivery_(.+)/, async (ctx) => {
+            const orderId = ctx.match[1];
+            await ctx.answerCbQuery();
+            await ctx.reply(
+                `💰 <b>Введите стоимость доставки</b> для заказа <code>#${orderId.slice(-6)}</code>\n` +
+                `Сумма будет добавлена к итогу ЮKassa.`,
+                { parse_mode: 'HTML', ...Markup.forceReply() }
+            );
+        });
+
+        this.bot.action(/history_page_(\d+)/, async (ctx) => {
+            const page = parseInt(ctx.match[1]);
+            await ctx.answerCbQuery();
+            await ctx.deleteMessage().catch(() => {});
+            await this.sendOrderHistory(ctx.from.id.toString(), page);
+        });
+
+        this.bot.action(/confirm_cancel_(.+)/, async (ctx) => {
+            const orderId = ctx.match[1];
+            await ctx.editMessageText(
+                `⚠️ Отменить заказ #${orderId.slice(-6)}?`,
+                Markup.inlineKeyboard([
+                    [
+                        Markup.button.callback('✅ Да', `set_status_${orderId}_${EnumOrderStatus.CANCELLED}`),
+                        Markup.button.callback('⬅️ Нет', `manage_${orderId}`)
+                    ]
+                ])
+            );
+        });
+
+        this.bot.action(/^set_status_(.+?)_(.+)$/, async (ctx) => {
+            const orderId = ctx.match[1];
+            const newStatus = ctx.match[2] as EnumOrderStatus;
+            try {
+                await this.prisma.order.update({ where: { id: orderId }, data: { status: newStatus } });
+                await ctx.answerCbQuery(`Обновлено: ${newStatus}`);
+                await this.editToOrdersList(ctx);
+            } catch (e: any) {
+                await ctx.reply(`❌ Ошибка: ${e.message}`);
+            }
+        });
+
+        this.bot.action('refresh_list', async (ctx) => {
+            await ctx.answerCbQuery('Обновлено');
+            await this.editToOrdersList(ctx);
+        });
+    }
+
+    async sendMainMenu(chatId: string) {
+        await this.bot.telegram.sendMessage(chatId, '📱 <b>Меню управления</b>', {
+            parse_mode: 'HTML',
+            ...Markup.inlineKeyboard([
+                [Markup.button.callback('📥 Активные заказы', 'refresh_list')],
+                [Markup.button.callback('📜 История', 'history_page_0')]
+            ])
+        });
+    }
+
+    async sendOrdersList(chatId: string) {
+        const { text, keyboard } = await this.prepareOrdersListData();
+        await this.bot.telegram.sendMessage(chatId, text, { parse_mode: 'HTML', ...keyboard });
+    }
+
+    private async editToOrdersList(ctx: any) {
+        const { text, keyboard } = await this.prepareOrdersListData();
+        await ctx.editMessageText(text, { parse_mode: 'HTML', ...keyboard }).catch(() => {});
+    }
+
+    private async prepareOrdersListData() {
+        const orders = await this.prisma.order.findMany({
+            where: { status: { in: [EnumOrderStatus.PENDING, EnumOrderStatus.AWAITING_PAYMENT, EnumOrderStatus.IN_PROGRESS] } },
+            include: { items: { include: { product: true } } },
+            orderBy: { createdAt: 'asc' }
+        });
+
+        if (orders.length === 0) {
+            return {
+                text: '🎉 Активных заказов нет.',
+                keyboard: Markup.inlineKeyboard([[Markup.button.callback('🔄 Обновить', 'refresh_list')], [Markup.button.callback('🏠 Меню', 'main_menu')]])
+            };
+        }
+
+        let text = `📋 <b>Список активных заказов:</b>\n\n`;
+        const buttons: any[][] = [];
+
+        orders.forEach((o, i) => {
+            const statusIcon = o.status === 'PENDING' ? '🆕' : o.status === 'AWAITING_PAYMENT' ? '⏳' : '📦';
+            const items = o.items.map(item => `  • ${item.product.title} (${item.quantity} шт.)`).join('\n');
+
+            text += `${i + 1}. 🆔 <b>#${o.id.slice(-6)}</b> — ${statusIcon} <b>${o.status}</b>\n`;
+            text += `👤 <b>Клиент:</b> ${o.customerName}\n`;
+            text += `📞 <b>Тел:</b> <code>${o.phone}</code>\n`;
+            text += `📦 <b>Состав:</b>\n${items}\n`;
+            text += `💰 <b>Итого:</b> ${o.total} руб.\n`;
+            if (o.deliveryAddress) text += `📍 <b>Адрес:</b> ${o.deliveryAddress}\n`;
+            if (o.comment) text += `💬 <b>Комм:</b> <i>${o.comment}</i>\n`;
+            text += `──────────────────\n`;
+
+            buttons.push([Markup.button.callback(`⚙️ Управлять #${o.id.slice(-6)}`, `manage_${o.id}`)]);
+        });
+
+        buttons.push([Markup.button.callback('🔄 Обновить список', 'refresh_list')], [Markup.button.callback('🏠 Меню', 'main_menu')]);
+        return { text, keyboard: Markup.inlineKeyboard(buttons) };
+    }
+
+    async sendOrderHistory(chatId: string, page: number) {
+        const limit = 5;
+        const skip = page * limit;
+        const [orders, total] = await Promise.all([
+            this.prisma.order.findMany({
+                where: { status: { in: [EnumOrderStatus.COMPLETED, EnumOrderStatus.CANCELLED] } },
+                orderBy: { createdAt: 'desc' },
+                skip, take: limit
+            }),
+            this.prisma.order.count({ where: { status: { in: [EnumOrderStatus.COMPLETED, EnumOrderStatus.CANCELLED] } } })
+        ]);
+
+        let text = `📜 <b>История (Стр. ${page + 1})</b>\n\n`;
+        orders.forEach(o => {
+            text += `${o.status === 'COMPLETED' ? '✅' : '❌'} #${o.id.slice(-6)} | ${o.total}₽ | ${o.createdAt.toLocaleDateString()}\n`;
+        });
+
+        const nav: any[] = [];
+        if (page > 0) nav.push(Markup.button.callback('⬅️', `history_page_${page - 1}`));
+        if (skip + limit < total) nav.push(Markup.button.callback('➡️', `history_page_${page + 1}`));
+
+        await this.bot.telegram.sendMessage(chatId, text, {
+            parse_mode: 'HTML',
+            ...Markup.inlineKeyboard([nav, [Markup.button.callback('🏠 Меню', 'main_menu')]])
+        });
+    }
+
+    async sendNewOrderAlert(order: any) {
+        const workers = await this.prisma.user.findMany({
+            where: { telegramId: { not: null }, role: { in: ['ADMIN', 'WORKER'] } }
+        });
+        for (const worker of workers) {
+            if (worker.telegramId) {
+                await this.bot.telegram.sendMessage(worker.telegramId, `🔔 <b>Новый заказ #${order.id.slice(-6)}!</b>`, { parse_mode: 'HTML' });
+                await this.sendOrdersList(worker.telegramId);
+            }
+        }
+    }
+
+    private async logout(ctx: any, userId: string) {
+        await this.prisma.user.update({ where: { id: userId }, data: { telegramId: null } });
+        await ctx.reply('📴 Вы вышли из системы.');
+    }
+}
+</file>
+
+<file path="server-side/src/user/decorators/user.decorator.ts">
+import { createParamDecorator, ExecutionContext } from '@nestjs/common'
+import type { Request } from 'express'
+import { User } from '@prisma/client'
+
+type RequestWithUser = Request & {
+	user: User
+}
+
+export const CurrentUser = createParamDecorator(
+	(data: keyof User | undefined, ctx: ExecutionContext) => {
+		const request = ctx.switchToHttp().getRequest<RequestWithUser>()
+		const user = request.user
+
+		return data ? user?.[data] : user
+	}
+)
+</file>
+
+<file path="server-side/src/user/user.controller.ts">
+import { Controller, Get } from '@nestjs/common'
+import { UserService } from './user.service'
+import { Auth } from 'src/auth/decorators/auth.decorator'
+import { CurrentUser } from './decorators/user.decorator'
+import { UseGuards } from '@nestjs/common'
+import { RolesGuard } from '../auth/guards/roles.guard'
+import { AuthGuard } from '@nestjs/passport'
+import { Query } from '@nestjs/common'
+import { Roles } from '../auth/decorators/roles.decorator'
+
+@Controller('users')
+export class UserController {
+    constructor(private readonly userService: UserService) {}
+
+    @Get()
+    @Roles('ADMIN', 'WORKER')
+    @UseGuards(AuthGuard('jwt'), RolesGuard)
+    async getAll(
+        @Query('searchTerm') searchTerm: string,
+        @CurrentUser() user: { id: string; role: string } // Достаем юзера из токена
+    ) {
+        // Теперь сервис точно знает, КТО запрашивает данные
+        return this.userService.getAll(user, searchTerm);
+    }
+
+    @Auth()
+    @Get('profile')
+    async getProfile(@CurrentUser('id') id: string) {
+        // Для профиля у нас уже есть метод, защищенный Auth()
+        return this.userService.getById(id, { id } as any); 
+    }
+}
+</file>
+
+<file path="server-side/src/user/user.module.ts">
+import { Module } from '@nestjs/common'
+import { UserService } from './user.service'
+import { UserController } from './user.controller'
+import { PrismaService } from '../prisma.service'
+
+@Module({
+	controllers: [UserController],
+	providers: [UserService, PrismaService],
+	exports: [UserService]
+})
+export class UserModule {}
+</file>
+
+<file path="server-side/src/user/user.service.ts">
+import { Injectable, ForbiddenException, NotFoundException } from '@nestjs/common'; // Импортировали NotFoundException
+import { PrismaService } from 'src/prisma.service';
+import { hash } from 'argon2';
+import { AuthDto } from 'src/auth/dto/auth.dto';
+import { EnumUserRole } from '@prisma/client'
+
+@Injectable()
+export class UserService {
+	constructor(private readonly prisma: PrismaService) {}
+		async getAll(user: { id: string, role: string }, searchTerm?: string) {
+    // 1. Поиск с учетом прав (важно, чтобы воркер не искал по админам)
+    	if (searchTerm) return this.getSearchTermFilter(user, searchTerm);
+
+    // 2. АДМИН видит вообще всех (включая других админов и воркеров)
+    	if (user.role === 'ADMIN') {
+        	return this.prisma.user.findMany({
+            	select: { id: true, email: true, name: true, role: true }
+        	});
+    	}
+
+    // 3. ВОРКЕР видит всех пользователей (USER) + себя
+    // 4. ЮЗЕР видит только себя
+    	const filter: any = user.role === 'WORKER' 
+    		? { OR: [{ role: EnumUserRole.USER }, { id: user.id }] } 
+    		: { id: user.id }
+
+    	return this.prisma.user.findMany({
+        	where: filter,
+        	select: { id: true, email: true, name: true, role: true }
+    	})
+	}
+
+	private async getSearchTermFilter(user: { id: string, role: string }, searchTerm: string) {
+    // Формируем базовый фильтр прав доступа
+    	const accessFilter: any = user.role === 'ADMIN' 
+    		? {} 
+    		: user.role === 'WORKER' 
+        		? { OR: [{ role: EnumUserRole.USER }, { id: user.id }] }
+        		: { id: user.id }
+
+    	return this.prisma.user.findMany({
+        	where: {
+            	AND: [
+                	accessFilter, // Сначала ограничиваем область видимости
+                	{
+                    	OR: [
+                        	{ name: { contains: searchTerm, mode: 'insensitive' } },
+                        	{ email: { contains: searchTerm, mode: 'insensitive' } }
+                    	]
+                	}
+            	]
+        	},
+        	include: { orders: true }
+    	});
+	}
+	async getById(requestedId: string, currentUser?: { id: string, role: string }) {
+        // Логика доступа:
+        // Админ или Воркер могут смотреть любого
+        // Юзер может смотреть только свой ID
+        if (currentUser && currentUser.role! === 'USER' && currentUser.id !== requestedId) {
+            throw new ForbiddenException('Вы можете просматривать только свой профиль');
+        }
+
+        const user = await this.prisma.user.findUnique({
+            where: { id: requestedId },
+            include: { orders: true } // Осторожно с этим (см. ниже)
+        });
+        
+        if (!user) throw new NotFoundException('Пользователь не найден')
+        return user
+    }
+
+	async getByEmail(email: string) {
+    	const user = await this.prisma.user.findUnique({
+        	where: { email },
+        // Убираем include, так как заказы здесь — лишняя нагрузка и риск утечки
+    	})
+    
+    // Здесь IF не нужен для прав доступа, но нужен для защиты от падения
+    	if (!user) {
+        	throw new NotFoundException('Пользователь не найден')
+    	}
+    
+    	return user
+	}
+
+	async create(dto: AuthDto) {
+		return this.prisma.user.create({
+			data: {
+				name: dto.name,
+				email: dto.email,
+				password: await hash(dto.password),
+				role: EnumUserRole.USER
+
+			}
+		})
+	}
+}
+</file>
+
+<file path="server-side/src/app.controller.spec.ts">
+import { Test, TestingModule } from '@nestjs/testing'
+import { AppController } from './app.controller'
+import { AppService } from './app.service'
+
+describe('AppController', () => {
+	let appController: AppController
+
+	beforeEach(async () => {
+		const app: TestingModule = await Test.createTestingModule({
+			controllers: [AppController],
+			providers: [AppService]
+		}).compile()
+
+		appController = app.get<AppController>(AppController)
+	})
+
+	describe('root', () => {
+		it('should return "Hello World!"', () => {
+			expect(appController.getHello()).toBe('Hello World!')
+		})
+	})
+})
+</file>
+
+<file path="server-side/src/app.controller.ts">
+import { Controller, Get } from '@nestjs/common'
+import { AppService } from './app.service'
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger'
+
+@ApiTags('Health Check') // Группировка в Swagger
+@Controller()
+export class AppController {
+    constructor(private readonly appService: AppService) {}
+
+    @Get()
+    @ApiOperation({ summary: 'Проверка работоспособности API' })
+    @ApiResponse({ status: 200, description: 'API работает' })
+    getHello(): string {
+        return this.appService.getHello()
+    }
+}
+</file>
+
+<file path="server-side/src/app.module.ts">
+import { Module } from '@nestjs/common'
+import { ConfigModule } from '@nestjs/config'
+import { AuthModule } from './auth/auth.module'
+import { UserModule } from './user/user.module'
+import { CategoryModule } from './category/category.module'
+import { FileModule } from './file/file.module'
+import { OrderModule } from './order/order.module'
+import { ProductModule } from './product/product.module'
+import { ThrottlerModule } from '@nestjs/throttler'
+
+@Module({
+    imports: [
+        ConfigModule.forRoot({
+            isGlobal: true
+        }),
+        // Настройка защиты от брутфорса
+        ThrottlerModule.forRoot([{
+            ttl: 60000, // 60 секунд
+            limit: 50,  // 50 запросов в минуту на один IP
+        }]),
+        AuthModule,
+        UserModule,
+        CategoryModule,
+        FileModule,
+        OrderModule,
+        ProductModule
+    ]
+})
+export class AppModule {}
+</file>
+
+<file path="server-side/src/app.service.ts">
+import { Injectable } from '@nestjs/common'
+
+@Injectable()
+export class AppService {
+	getHello(): string {
+		return 'Hello World!'
+	}
+}
+</file>
+
+<file path="server-side/src/main.ts">
+import { NestFactory } from '@nestjs/core'
+import { AppModule } from './app.module'
+import { AllExceptionsFilter } from './filters/all-exceptions.filter'
+import cookieParser from 'cookie-parser'
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
+import { ValidationPipe } from '@nestjs/common'
+
+async function bootstrap() {
+	const app = await NestFactory.create(AppModule)
+	app.useGlobalPipes(new ValidationPipe({ 
+    whitelist: true, 
+    transform: true, // <-- Это позволит автоматически преобразовывать типы из DTO
+    forbidNonWhitelisted: true 
+  	}))
+	app.useGlobalFilters(new AllExceptionsFilter())
+	
+	app.use(cookieParser())
+	app.enableCors({
+		origin: [process.env.CLIENT_URL],
+		credentials: true,
+		exposedHeaders: 'set-cookie'
+	})
+
+		const config = new DocumentBuilder()
+			.setTitle('GreenArt API')
+			.setDescription('API documentation')
+			.setVersion('1.0')
+			.build()
+
+		const document = SwaggerModule.createDocument(app, config)
+
+		SwaggerModule.setup('api/docs', app, document)
+	
+	await app.listen(5001)
+}
+
+void bootstrap()
+</file>
+
+<file path="server-side/src/prisma.service.ts">
+import { Injectable, OnModuleInit } from '@nestjs/common'
+import { PrismaClient } from '@prisma/client'
+import { PrismaPg } from '@prisma/adapter-pg'
+
+@Injectable()
+export class PrismaService extends PrismaClient implements OnModuleInit {
+	constructor() {
+		const adapter = new PrismaPg({
+			connectionString: process.env.DATABASE_URL!
+		})
+
+		super({ adapter })
+	}
+
+	async onModuleInit() {
+		await this.$connect()
+	}
+}
+</file>
+
+<file path="server-side/.gitignore">
+# compiled output
+/dist
+/node_modules
+/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# temp directory
+.temp
+.tmp
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+/generated/prisma
+</file>
+
+<file path="server-side/.prettierrc">
+{
+  "trailingComma": "none",
+  "tabWidth": 4,
+  "useTabs": true,
+  "semi": false,
+  "singleQuote": true,
+  "jsSingleQuote": true,
+  "arrowParens": "avoid",
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true,
+  "importOrderParserPlugins": [
+    "classProperties",
+    "decorators-legacy",
+    "typescript"
+  ],
+  "importOrder": ["<THIRD_PARTY_MODULES>", "^@/(.*)$", "^../(.*)", "^./(.*)"],
+  "plugins": ["@trivago/prettier-plugin-sort-imports"]
+}
+</file>
+
+<file path="server-side/eslint.config.mjs">
+// @ts-check
+import eslint from '@eslint/js';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  {
+    ignores: ['eslint.config.mjs'],
+  },
+  eslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
+  eslintPluginPrettierRecommended,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        ...globals.jest,
+      },
+      sourceType: 'commonjs',
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-floating-promises': 'warn',
+      '@typescript-eslint/no-unsafe-argument': 'warn',
+      "prettier/prettier": ["error", { endOfLine: "auto" }],
+    },
+  },
+);
+</file>
+
+<file path="server-side/nest-cli.json">
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true
+  }
+}
+</file>
+
+<file path="server-side/package.json">
+{
+  "name": "server-side",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "dependencies": {
+    "@a2seven/yoo-checkout": "^1.1.4",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/jwt": "^11.0.2",
+    "@nestjs/mapped-types": "*",
+    "@nestjs/passport": "^11.0.5",
+    "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/serve-static": "^5.0.4",
+    "@nestjs/swagger": "^11.2.6",
+    "@nestjs/throttler": "^6.5.0",
+    "@prisma/adapter-pg": "^7.4.2",
+    "@prisma/client": "^7.4.2",
+    "app-root-path": "^3.1.0",
+    "argon2": "^0.44.0",
+    "bcrypt": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "cookie-parser": "^1.4.7",
+    "dayjs": "^1.11.19",
+    "fs-extra": "^11.3.4",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "passport-yandex": "^0.0.5",
+    "pg": "^8.20.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "swagger-ui-express": "^5.0.1",
+    "telegraf": "^4.16.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.1",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/jest": "^30.0.0",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^22.10.7",
+    "@types/passport-google-oauth20": "^2.0.17",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^11.0.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "globals": "^16.0.0",
+    "jest": "^30.0.0",
+    "prettier": "^3.4.2",
+    "prisma": "^7.4.2",
+    "source-map-support": "^0.5.21",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
+</file>
+
+<file path="server-side/pnpm-workspace.yaml">
+onlyBuiltDependencies:
+  - '@nestjs/core'
+  - argon2
+</file>
+
+<file path="server-side/prisma.config.ts">
+// This file was generated by Prisma, and assumes you have installed the following:
+// npm install --save-dev prisma dotenv
+import 'dotenv/config'
+import { defineConfig } from 'prisma/config'
+
+export default defineConfig({
+	schema: 'prisma/schema.prisma',
+	migrations: {
+		path: 'prisma/migrations'
+	},
+	datasource: {
+		url: process.env['DATABASE_URL']
+	}
+})
+</file>
+
+<file path="server-side/README.md">
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+</p>
+
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
+
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
+## Description
+
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+
+## Project setup
+
+```bash
+$ pnpm install
+```
+
+## Compile and run the project
+
+```bash
+# development
+$ pnpm run start
+
+# watch mode
+$ pnpm run start:dev
+
+# production mode
+$ pnpm run start:prod
+```
+
+## Run tests
+
+```bash
+# unit tests
+$ pnpm run test
+
+# e2e tests
+$ pnpm run test:e2e
+
+# test coverage
+$ pnpm run test:cov
+```
+
+## Deployment
+
+When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+
+If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+
+```bash
+$ pnpm install -g @nestjs/mau
+$ mau deploy
+```
+
+With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+
+## Resources
+
+Check out a few resources that may come in handy when working with NestJS:
+
+- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
+- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
+- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
+- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
+- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
+- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
+- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
+- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+</file>
+
+<file path="server-side/tsconfig.build.json">
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}
+</file>
+
+<file path="server-side/tsconfig.json">
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolvePackageJsonExports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false,
+  }
+}
+</file>
+
+<file path="cspell.json">
+{
+  "version": "0.2",
+  "language": "en,ru", 
+  "ignorePaths": [
+    "node_modules",
+    "dist"
+  ]
+}
+</file>
+
+</files>

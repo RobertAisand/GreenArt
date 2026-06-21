@@ -1,0 +1,104 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id         String       @id @default(cuid())
+  createdAt  DateTime     @default(now()) @map("created_at")
+  updatedAt  DateTime     @updatedAt @map("updated_at")
+  email      String       @unique
+  password   String?
+  name       String       @default("Не указано")
+  picture    String       @default("/uploads/no-user-images.png")
+  role       EnumUserRole @default(USER)
+  telegramId String?
+  orders     Order[]
+
+  @@map("user")
+}
+
+model Product {
+  id          String      @id @default(cuid())
+  createdAt   DateTime    @default(now()) @map("created_at")
+  updatedAt   DateTime    @updatedAt @map("updated_at")
+  title       String
+  description String
+  price       Int
+  images      String[]
+  categoryId  String?     @map("category_id")
+  orderItems  OrderItem[]
+  category    Category?   @relation(fields: [categoryId], references: [id])
+
+  @@map("product")
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+  title       String
+  description String
+  products    Product[]
+
+  @@map("category")
+}
+
+model Order {
+  id              String           @id @default(cuid())
+  createdAt       DateTime         @default(now()) @map("created_at")
+  updatedAt       DateTime         @updatedAt @map("updated_at")
+  status          EnumOrderStatus  @default(PENDING)
+  total           Int
+  customerName    String
+  phone           String
+  comment         String?
+  userId          String           @map("user_id")
+  deliveryAddress String
+  deliveryDate    DateTime
+  deliveryType    EnumDeliveryType
+  paymentLink     String?
+  shippingPrice   Int              @default(0)
+  user            User             @relation(fields: [userId], references: [id])
+  items           OrderItem[]
+
+  @@map("order")
+}
+
+model OrderItem {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  quantity  Int
+  price     Int
+  orderId   String?  @map("order_id")
+  productId String   @map("product_id")
+  order     Order?   @relation(fields: [orderId], references: [id])
+  product   Product  @relation(fields: [productId], references: [id])
+
+  @@map("order_item")
+}
+
+enum EnumUserRole {
+  USER
+  ADMIN
+  WORKER
+}
+
+enum EnumDeliveryType {
+  PICKUP
+  COURIER
+}
+
+enum EnumOrderStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+  IN_DELIVERY
+  IN_PROGRESS
+  AWAITING_PAYMENT
+}
